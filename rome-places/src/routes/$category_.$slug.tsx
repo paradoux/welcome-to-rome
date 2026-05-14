@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, Clock, Globe2, MapPin, Navigation, Tags } from "lucide-react";
+import { ArrowLeft, Clock, Globe2, MapPin, Navigation, Phone, Tags } from "lucide-react";
 import { CategoryIcon } from "@/components/CategoryIcon";
 import { RomeMap } from "@/components/RomeMap";
 import { SiteLayout } from "@/components/SiteLayout";
@@ -94,6 +94,20 @@ function DetailPage() {
                 value={place.address}
               />
               <InfoBlock icon={<Clock className="h-4 w-4" />} label="Hours" value={place.hours} />
+              {place.phone && (
+                <InfoBlock
+                  icon={<Phone className="h-4 w-4" />}
+                  label="Phone"
+                  value={
+                    <a
+                      href={`tel:${place.phone.replace(/\s+/g, "")}`}
+                      className="hover:text-foreground"
+                    >
+                      {place.phone}
+                    </a>
+                  }
+                />
+              )}
             </div>
 
             <div className="rounded-lg border border-border bg-card p-5">
@@ -156,7 +170,7 @@ function InfoBlock({
 }: {
   icon: React.ReactNode;
   label: string;
-  value: string;
+  value: React.ReactNode;
 }) {
   return (
     <div className="rounded-lg border border-border bg-card p-5">

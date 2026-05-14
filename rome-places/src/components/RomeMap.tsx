@@ -89,7 +89,7 @@ export function RomeMap({ places, selectedSlug, onSelect }: RomeMapProps) {
 
     const bounds = L.latLngBounds(places.map((place) => [place.lat, place.lng]));
     map.fitBounds(bounds, { padding: [48, 48], maxZoom: places.length === 1 ? 15 : 13 });
-  }, [isReady, placeKey, places]);
+  }, [isReady, placeKey]);
 
   useEffect(() => {
     const map = mapRef.current;

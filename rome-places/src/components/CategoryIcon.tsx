@@ -4,6 +4,7 @@ import {
   IceCreamBowl,
   Landmark,
   Martini,
+  ShoppingBag,
   Trees,
   Utensils,
   type LucideIcon,
@@ -16,6 +17,7 @@ const icons: Record<Category, LucideIcon> = {
   bars: Martini,
   cafes: Coffee,
   rooftops: Building2,
+  shops: ShoppingBag,
   culture: Landmark,
   balades: Trees,
 };
