@@ -40,11 +40,14 @@ export function PlaceCard({ place, compact = false, showCategory = false }: Plac
                   {meta.navLabel}
                 </Link>
               )}
-              {place.recommendedBy && (
-                <span className="rounded-md border border-primary/30 bg-primary/10 px-2 py-1 text-xs font-medium text-primary">
-                  {place.recommendedBy}
+              {place.recommendedBy?.map((reco) => (
+                <span
+                  key={reco}
+                  className="rounded-md border border-primary/30 bg-primary/10 px-2 py-1 text-xs font-medium text-primary"
+                >
+                  {reco}
                 </span>
-              )}
+              ))}
             </div>
             <h3 className="mt-2 font-serif text-2xl leading-tight">{place.title}</h3>
             <p className="mt-1 text-sm text-muted-foreground">

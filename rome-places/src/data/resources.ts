@@ -34,8 +34,7 @@ export interface Place {
   phone?: string;
   website?: string;
   reserveUrl?: string;
-  recommendedBy?: string;
-  tags: string[];
+  recommendedBy?: string[];
 }
 
 const image = {
@@ -149,7 +148,6 @@ export const places: Place[] = [
       "Good for a practical lunch or dinner when the day is already around Prati, Borgo, or the Vatican side of town.",
     hours: "Check live hours before going.",
     phone: "+39 392 621 2631",
-    tags: ["Borgo", "near Vatican", "casual"],
   },
   {
     slug: "le-levain",
@@ -169,7 +167,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.lelevainroma.com/",
     phone: "+39 06 4754 3834",
-    tags: ["bakery", "breakfast", "Trastevere"],
   },
   {
     slug: "faro",
@@ -189,7 +186,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.farorome.com/",
     phone: "+39 06 4281 5714",
-    tags: ["coffee", "brunch", "Sallustiano"],
   },
   {
     slug: "giggetto",
@@ -209,7 +205,6 @@ export const places: Place[] = [
     hours: "Often split lunch and dinner service; check live hours before going.",
     website: "https://www.giggetto.it/",
     phone: "+39 06 686 1105",
-    tags: ["Jewish Ghetto", "classic", "artichokes"],
   },
   {
     slug: "al-forno-della-soffitta",
@@ -229,7 +224,6 @@ export const places: Place[] = [
     hours: "Usually lunch and dinner service; check live hours before going.",
     website: "https://www.alfornodellasoffitta.it/",
     phone: "+39 06 4201 1164",
-    tags: ["pizza", "Porta Pia", "dinner"],
   },
   {
     slug: "antica-latteria",
@@ -249,7 +243,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.anticalatteriaroma.it/",
     phone: "+39 06 9453 3459",
-    tags: ["wine", "Campo", "small plates"],
   },
   {
     slug: "pommidoro",
@@ -269,7 +262,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.pommidoro.it/",
     phone: "+39 06 445 2692",
-    tags: ["San Lorenzo", "historic", "trattoria"],
   },
   {
     slug: "gelateria-dei-gracchi",
@@ -289,7 +281,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.gelateriadeigracchi.it/",
     phone: "+39 06 321 6668",
-    tags: ["gelato", "Prati", "sweet"],
   },
   {
     slug: "ruma-bottega-cucina-agricola",
@@ -310,7 +301,6 @@ export const places: Place[] = [
       "Official site lists Wednesday afternoon/evening and Thursday-Sunday daytime/evening service.",
     website: "https://www.rumabottegaecucina.com/",
     phone: "+39 06 8947 1435",
-    tags: ["farm-to-table", "Piazza Navona", "bottega"],
   },
   {
     slug: "ciampini",
@@ -330,7 +320,7 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.ciampini.com/",
     phone: "+39 06 6876 606",
-    tags: ["cafe", "gelato", "Campo Marzio"],
+    recommendedBy: ["Apoline's reco"],
   },
   {
     slug: "antica-pizzeria-di-trevi",
@@ -349,7 +339,6 @@ export const places: Place[] = [
       "Useful when the route is aggressively central and you want something close without drifting too far from Trevi.",
     hours: "Check live hours before going.",
     phone: "+39 06 6992 1939",
-    tags: ["pizza", "Trevi", "central"],
   },
   {
     slug: "la-zanzara",
@@ -369,7 +358,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.lazanzararoma.com/",
     phone: "+39 06 6839 2227",
-    tags: ["Prati", "cocktails", "dinner"],
   },
   {
     slug: "osteria-la-gensola",
@@ -387,10 +375,9 @@ export const places: Place[] = [
     details:
       "A Josi recommendation, and one to keep for the Trastevere dinner cluster rather than a random cross-town sprint.",
     hours: "Check live hours before going.",
-    recommendedBy: "Reco Josi",
+    recommendedBy: ["Reco Josi", "Apoline's reco"],
     website: "https://lagensola.com/",
     phone: "+39 06 5816 312",
-    tags: ["Reco Josi", "Trastevere", "seafood"],
   },
   {
     slug: "giulio-passami-l-olio",
@@ -408,10 +395,9 @@ export const places: Place[] = [
     details:
       "Another Josi recommendation, well placed for a central evening around Piazza Navona, Castel Sant'Angelo, or the river.",
     hours: "Check live hours before going.",
-    recommendedBy: "Reco Josi",
+    recommendedBy: ["Reco Josi", "Apoline's reco"],
     website: "https://www.giuliopassamilolio.com/",
     phone: "+39 06 6880 3288",
-    tags: ["Reco Josi", "wine", "Ponte"],
   },
   {
     slug: "da-enzo-al-29",
@@ -431,7 +417,6 @@ export const places: Place[] = [
     hours: "Official site lists Monday-Saturday lunch and dinner; closed Sunday.",
     website: "https://www.daenzoal29.com/",
     phone: "+39 06 581 2260",
-    tags: ["Trastevere", "carbonara", "queue"],
   },
   {
     slug: "forno-campo-de-fiori",
@@ -451,7 +436,7 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.fornocampodefiori.com/",
     phone: "+39 06 6880 6662",
-    tags: ["bakery", "pizza bianca", "Campo"],
+    recommendedBy: ["Apoline's reco"],
   },
   {
     slug: "la-matriciana",
@@ -471,7 +456,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.lamatriciana.it/",
     phone: "+39 06 488 1775",
-    tags: ["historic", "Viminale", "pasta"],
   },
   {
     slug: "roscioli-salumeria-con-cucina",
@@ -491,7 +475,7 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.roscioli.com/",
     phone: "+39 06 687 5287",
-    tags: ["Campo", "salumeria", "wine"],
+    recommendedBy: ["Apoline's reco"],
   },
   {
     slug: "trattoria-al-moro",
@@ -511,7 +495,7 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://ristorantealmororoma.it/",
     phone: "+39 06 678 3495",
-    tags: ["Trevi", "classic", "dinner"],
+    recommendedBy: ["Apoline's reco"],
   },
   {
     slug: "chez-dede",
@@ -531,7 +515,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.chezdede.com/",
     phone: "+39 06 8377 2934",
-    tags: ["boutique", "Via Giulia", "design"],
   },
   {
     slug: "giolitti",
@@ -551,7 +534,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website: "https://www.giolitti.it/",
     phone: "+39 06 699 1243",
-    tags: ["gelato", "Pantheon", "historic"],
   },
   {
     slug: "emma-pizzeria",
@@ -570,7 +552,6 @@ export const places: Place[] = [
       "Good central pick when the plan is pizza without going to Trastevere: thin crust, Roscioli-grade ingredients, and a proper sit-down room a few steps from Campo de' Fiori.",
     hours: "Usually lunch and dinner service; check live hours before going.",
     website: "https://emmapizzeria.com/",
-    tags: ["pizza", "Roscioli", "central"],
   },
   {
     slug: "forno-conti-co",
@@ -589,7 +570,6 @@ export const places: Place[] = [
       "Useful when the morning is on the Esquilino side: a proper neighborhood forno for breakfast, pastries, and a calmer coffee stop a few minutes from Piazza Dante and Piazza Vittorio.",
     hours: "Check live hours before going.",
     website: "https://fornoconti.co/",
-    tags: ["bakery", "breakfast", "Esquilino"],
   },
   {
     slug: "mizio-street-food",
@@ -607,7 +587,6 @@ export const places: Place[] = [
     details:
       "The play here is a fast, generous sandwich on the way to or from the Colosseum side of Monti — short menu, takeaway energy, lunch-shaped.",
     hours: "Lunch-leaning; check live hours before going.",
-    tags: ["street food", "Monti", "lunch"],
   },
   {
     slug: "gelateria-del-teatro",
@@ -625,8 +604,8 @@ export const places: Place[] = [
     details:
       "A neat sweet stop when the route is between Piazza Navona, Ponte, and Castel Sant'Angelo.",
     hours: "Check live hours before going.",
+    recommendedBy: ["Apoline's reco"],
     website: "https://www.gelateriadelteatro.it/",
-    tags: ["gelato", "Via dei Coronari", "sweet"],
   },
   {
     slug: "regoli-pasticceria",
@@ -644,7 +623,6 @@ export const places: Place[] = [
     details:
       "Make this the sweet stop around Santa Maria Maggiore, Monti, or the Termini side of a day.",
     hours: "Check live hours before going.",
-    tags: ["pastry", "Esquilino", "historic"],
   },
   {
     slug: "loratorio-trastevere",
@@ -662,7 +640,6 @@ export const places: Place[] = [
     details:
       "Keep it for a drink before or after dinner when you are already south of Ponte Sisto.",
     hours: "Check live hours before going.",
-    tags: ["Trastevere", "drinks", "aperitivo"],
   },
   {
     slug: "bar-san-calisto",
@@ -679,7 +656,6 @@ export const places: Place[] = [
     shortDescription: "A beloved, unfussy Trastevere square bar.",
     details: "Cheap, lively, and best when you want the piazza itself to be part of the drink.",
     hours: "Check live hours before going.",
-    tags: ["Trastevere", "piazza", "classic"],
   },
   {
     slug: "caffe-delle-arti",
@@ -697,7 +673,6 @@ export const places: Place[] = [
     details: "Works well as the civilized pause between museum time and a Villa Borghese walk.",
     hours: "Check live hours before going.",
     website: "https://www.caffedelleartiroma.it/",
-    tags: ["cafe", "museum", "Villa Borghese"],
   },
   {
     slug: "masa-rooftop",
@@ -716,7 +691,6 @@ export const places: Place[] = [
       "Good for a drink after Santa Maria Maggiore, Monti, or a Termini-side arrival day; Mediterranean and mezè-leaning menu on the same terrace.",
     hours: "Check live hours before going.",
     website: "https://masarooftop.it/",
-    tags: ["rooftop", "Monti", "views"],
   },
   {
     slug: "the-roof",
@@ -736,7 +710,6 @@ export const places: Place[] = [
     hours:
       "The Rome EDITION lists The Roof bar service late morning through evening; check live hours.",
     website: "https://www.editionhotels.com/rome/restaurants-and-bars/the-roof/",
-    tags: ["rooftop", "cocktails", "Trevi"],
   },
   {
     slug: "hotel-locarno",
@@ -755,7 +728,7 @@ export const places: Place[] = [
       "A good aperitivo choice before or after the Spanish Steps, Piazza del Popolo, or Villa Borghese edge.",
     hours: "Check live hours before going.",
     website: "https://www.hotellocarno.com/",
-    tags: ["rooftop", "Piazza del Popolo", "aperitivo"],
+    recommendedBy: ["Apoline's reco"],
   },
   {
     slug: "notos-rooftop",
@@ -774,7 +747,7 @@ export const places: Place[] = [
       "Use it for a smarter aperitivo or sunset drink between Trevi and Piazza Venezia; herb-filled terrace, hotel-grade service, central views.",
     hours: "Check live hours before going.",
     website: "https://www.sixsenses.com/en/hotels-resorts/europe/italy/rome/dining/notos-rooftop/",
-    tags: ["rooftop", "Six Senses", "central"],
+    recommendedBy: ["Apoline's reco"],
   },
   {
     slug: "cielo-rooftop",
@@ -794,7 +767,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website:
       "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-la-ville/dining/cielo-bar/",
-    tags: ["rooftop", "Spanish Steps", "Rocco Forte"],
   },
   {
     slug: "casa-monti-rooftop",
@@ -813,7 +785,6 @@ export const places: Place[] = [
       "An easy fit when the evening is already in Monti — quieter than the big-name terraces and close to Suburra and the Forum side.",
     hours: "Check live hours before going.",
     website: "https://www.casamontiroma.com/wine-dine",
-    tags: ["rooftop", "Monti", "hotel"],
   },
   {
     slug: "la-terrazza-bvlgari",
@@ -832,7 +803,6 @@ export const places: Place[] = [
       "Dressier than most: panoramic views over the Mausoleum of Augustus, the Pantheon, and the dome of St. Peter's — worth booking ahead for sunset.",
     hours: "Check live hours before going.",
     website: "https://www.bulgarihotels.com/en_US/rome/dining/la-terrazza",
-    tags: ["rooftop", "Bvlgari", "luxury"],
   },
   {
     slug: "terrazza-borromini",
@@ -851,7 +821,6 @@ export const places: Place[] = [
       "The point of going is the angle on Piazza Navona itself — Sant'Agnese's dome at eye level, Borromini's bell towers right there. Best at sunset.",
     hours: "Check live hours before going.",
     website: "https://www.eitchborromini.com/en/restaurant/",
-    tags: ["rooftop", "Piazza Navona", "views"],
   },
   {
     slug: "divinity-rooftop",
@@ -870,7 +839,6 @@ export const places: Place[] = [
       "Sixth-floor lounge bar with a direct view of the Pantheon's dome — go for the drink and the angle, not the food first.",
     hours: "Check live hours before going.",
     website: "https://www.thepantheonhotel.com/en/terrace/",
-    tags: ["rooftop", "Pantheon", "cocktails"],
   },
   {
     slug: "gigi-rigolatto",
@@ -890,7 +858,6 @@ export const places: Place[] = [
     hours: "Check live hours before going.",
     website:
       "https://www.orient-express.com/en/hotel/europe/italy/rome/la-minerva/restaurants-bars/gigi-rigolatto-roma",
-    tags: ["rooftop", "Orient Express", "Pantheon"],
   },
   {
     slug: "terrazza-delle-5-lune",
@@ -909,7 +876,6 @@ export const places: Place[] = [
       "Smaller and lower-key than the big-name terraces, with a wide sweep from the Pantheon to the Vatican — good for an aperitivo on the Navona side.",
     hours: "Check live hours before going.",
     website: "https://www.anticadimoracinquelune.it/en/cinque-lune-terrace-bistrot.html",
-    tags: ["rooftop", "Piazza Navona", "aperitivo"],
   },
   {
     slug: "terrazza-del-cesari",
@@ -928,7 +894,6 @@ export const places: Place[] = [
       "Two levels: the lower side looks onto Piazza di Pietra and the Temple of Hadrian, the upper one frames Sant'Ignazio's facade. Open through the day, not just at night.",
     hours: "Usually open noon to midnight; check live hours before going.",
     website: "https://www.9-hotel-cesari-rome.it/en/collection/rooftop-terrace.1289.html",
-    tags: ["rooftop", "Piazza di Pietra", "central"],
   },
   {
     slug: "zuma-rome",
@@ -947,7 +912,7 @@ export const places: Place[] = [
       "Fourth-floor Japanese izakaya, fifth-floor bar-and-lounge terrace — go for cocktails and the Condotti-side view rather than a quiet local pause.",
     hours: "Check live hours before going.",
     website: "https://www.zumarestaurant.com/en/rome/",
-    tags: ["rooftop", "Japanese", "Fendi"],
+    recommendedBy: ["Apoline's reco"],
   },
   {
     slug: "etere-rooftop",
@@ -966,7 +931,6 @@ export const places: Place[] = [
       "A quieter Relais & Châteaux rooftop on the Tridente side — works for aperitivo after Piazza del Popolo, the Ara Pacis, or a Tiber-side walk.",
     hours: "Check live hours before going.",
     website: "https://www.palazzoripetta.com/en/dining/etere-rooftop.html",
-    tags: ["rooftop", "Tridente", "aperitivo"],
   },
   {
     slug: "palazzo-barberini",
@@ -985,7 +949,6 @@ export const places: Place[] = [
       "A strong culture anchor for a day around Barberini, Trevi, Quirinale, and Via Veneto.",
     hours: "Check official museum hours before going.",
     website: "https://barberinicorsini.org/en/museum/palazzo-barberini/",
-    tags: ["museum", "Baroque", "painting"],
   },
   {
     slug: "room-of-saint-ignazio",
@@ -1004,7 +967,6 @@ export const places: Place[] = [
       "Drop in when you are between the Pantheon, Trevi, and the shopping streets; the ceiling is the point.",
     hours: "Check church hours before going.",
     website: "https://www.chiesasantignazio.it/",
-    tags: ["church", "ceiling", "Pantheon area"],
   },
   {
     slug: "saint-paul-hors-les-murs",
@@ -1023,7 +985,6 @@ export const places: Place[] = [
       "A bigger, more deliberate culture trip south of the center, with scale and calm as the reward.",
     hours: "Check basilica hours before going.",
     website: "https://www.basilicasanpaolo.org/",
-    tags: ["basilica", "San Paolo", "major church"],
   },
   {
     slug: "san-gioacchino-in-prati",
@@ -1041,7 +1002,6 @@ export const places: Place[] = [
     details: "Pairs naturally with Vatican/Prati time and gives the area a quieter cultural stop.",
     hours: "Check church hours before going.",
     website: "https://www.sangioacchino.org/",
-    tags: ["church", "Prati", "quiet"],
   },
   {
     slug: "villa-borghese-gardens",
@@ -1059,7 +1019,6 @@ export const places: Place[] = [
     details:
       "Best when you want to soften a museum-heavy day with trees, views, and a loose route.",
     hours: "Public park; check any museum or rental hours separately.",
-    tags: ["park", "walk", "views"],
   },
   {
     slug: "passetto-di-borgo",
@@ -1077,7 +1036,6 @@ export const places: Place[] = [
     details:
       "A short, atmospheric piece of Borgo history to fold into the Vatican/Castel Sant'Angelo area.",
     hours: "Exterior walk is always visible; guided access varies.",
-    tags: ["Borgo", "history", "walk"],
   },
   {
     slug: "orange-garden",
@@ -1095,7 +1053,6 @@ export const places: Place[] = [
     details:
       "Pair it with the Aventine keyhole, Santa Sabina, and a slower walk down toward Testaccio or the river.",
     hours: "Garden hours vary by season; check live hours before going.",
-    tags: ["Aventine", "viewpoint", "garden"],
   },
   {
     slug: "keats-shelley-memorial-house",
@@ -1114,7 +1071,6 @@ export const places: Place[] = [
       "A small, specific stop for a Piazza di Spagna walk, especially if poetry and exile are part of the mood.",
     hours: "Check museum hours before going.",
     website: "https://ksh.roma.it/",
-    tags: ["museum", "literature", "Spanish Steps"],
   },
   {
     slug: "parco-degli-acquedotti",
@@ -1132,7 +1088,6 @@ export const places: Place[] = [
     details:
       "This is the big-air walk: less central, more cinematic, and excellent when you want space around the ruins.",
     hours: "Public park; check transit and daylight for the best visit.",
-    tags: ["park", "aqueducts", "long walk"],
   },
   {
     slug: "sant-ivo-alla-sapienza",
@@ -1150,7 +1105,6 @@ export const places: Place[] = [
     details:
       "The spiral lantern and star-shaped plan are the point. Access is famously limited (often Sunday mornings only) — check before crossing town.",
     hours: "Restricted opening; commonly Sunday mornings. Verify before visiting.",
-    tags: ["Borromini", "baroque", "Piazza Navona"],
   },
   {
     slug: "palazzo-altemps",
@@ -1169,7 +1123,6 @@ export const places: Place[] = [
       "One of the four sites of the Museo Nazionale Romano. Calm, beautifully lit, and an easy pair with Piazza Navona just around the corner.",
     hours: "Tuesday-Sunday, typically 9:30-19:00; closed Monday. Check before going.",
     website: "https://museonazionaleromano.beniculturali.it/palazzo-altemps/",
-    tags: ["museum", "renaissance", "Piazza Navona"],
   },
   {
     slug: "chiesa-del-gesu",
@@ -1188,7 +1141,6 @@ export const places: Place[] = [
       "Look up: Baciccio's Triumph of the Name of Jesus pours out of the ceiling. The Sant'Ignazio side chapel mechanism uncovers the silver statue daily around 17:30.",
     hours: "Generally 07:30-12:30 and 16:00-19:45; check daily.",
     website: "https://www.chiesadelgesu.org/",
-    tags: ["Jesuit", "baroque", "ceiling"],
   },
   {
     slug: "palazzo-venezia-gardens",
@@ -1207,7 +1159,6 @@ export const places: Place[] = [
       "Few people know this exists. A small, formal renaissance garden — perfect quiet pause between the Capitoline, the Forum, and the Corso.",
     hours: "Access through the museum; Tuesday-Sunday, generally 09:00-19:00.",
     website: "https://vive.cultura.gov.it/it/palazzo-venezia",
-    tags: ["garden", "hidden", "Piazza Venezia"],
   },
   {
     slug: "chiostro-santa-maria-sopra-minerva",
@@ -1225,7 +1176,6 @@ export const places: Place[] = [
     details:
       "A quiet rectangle of arches behind the only Gothic church in central Rome. Pair with the church itself (Michelangelo's Christ, Bernini's elephant out front).",
     hours: "Access varies; sometimes through the convent or during exhibitions. Check before visiting.",
-    tags: ["cloister", "Pantheon area", "hidden"],
   },
   {
     slug: "san-luigi-dei-francesi",
@@ -1243,7 +1193,6 @@ export const places: Place[] = [
     details:
       "The Calling of Saint Matthew is the headline. Bring coins for the chapel light. Quietest mid-morning or just before closing.",
     hours: "Generally 09:30-12:45 and 14:30-18:30; closed parts of Thursday afternoons.",
-    tags: ["Caravaggio", "free", "Piazza Navona"],
   },
   {
     slug: "santa-maria-del-popolo",
@@ -1261,7 +1210,6 @@ export const places: Place[] = [
     details:
       "Cerasi Chapel for the Conversion of St. Paul and Crucifixion of St. Peter; Chigi Chapel for Raphael. An easy stop walking down from Villa Borghese.",
     hours: "Generally 07:30-12:30 and 16:00-19:00.",
-    tags: ["Caravaggio", "Raphael", "Piazza del Popolo"],
   },
   {
     slug: "sant-agostino",
@@ -1279,7 +1227,6 @@ export const places: Place[] = [
     details:
       "A short walk from Piazza Navona; less crowded than San Luigi dei Francesi and worth pairing with it.",
     hours: "Generally 07:30-12:00 and 16:00-19:30.",
-    tags: ["Caravaggio", "free", "Piazza Navona"],
   },
   {
     slug: "santa-maria-sopra-minerva",
@@ -1297,7 +1244,6 @@ export const places: Place[] = [
     details:
       "Blue starry vault, the tomb of Catherine of Siena, a small Filippino Lippi chapel, and Bernini's elephant-and-obelisk standing guard outside.",
     hours: "Generally 10:00-13:00 and 15:00-19:00.",
-    tags: ["Gothic", "Michelangelo", "Pantheon area"],
   },
   {
     slug: "san-clemente",
@@ -1316,7 +1262,6 @@ export const places: Place[] = [
       "Top level is free; the underground archaeological levels need a ticket and are the real reason to go. Five minutes from the Colosseum, almost empty by comparison.",
     hours: "Monday-Saturday 10:00-12:30 and 15:00-18:00; Sunday afternoons.",
     website: "https://basilicasanclemente.com/",
-    tags: ["archaeology", "mosaic", "near Colosseum"],
   },
   {
     slug: "san-pietro-in-vincoli",
@@ -1334,7 +1279,6 @@ export const places: Place[] = [
     details:
       "Tucked above the Colosseum side; bring coins for the chapel light to see the Moses lit properly.",
     hours: "Generally 08:00-12:30 and 15:00-19:00.",
-    tags: ["Michelangelo", "free", "Monti"],
   },
   {
     slug: "santa-maria-in-trastevere",
@@ -1352,7 +1296,6 @@ export const places: Place[] = [
     details:
       "Built into the daily life of Trastevere — pop in before or after dinner, the gold mosaics read best by lamplight.",
     hours: "Generally 07:30-21:00.",
-    tags: ["mosaic", "Trastevere", "ancient"],
   },
   {
     slug: "santa-sabina",
@@ -1370,7 +1313,6 @@ export const places: Place[] = [
     details:
       "Pair with the Orange Garden and the Aventine Keyhole — they're all within a hundred metres. The wooden 5th-c. door panels are the rare survival.",
     hours: "Generally 08:15-12:30 and 15:30-18:00.",
-    tags: ["early Christian", "Aventino", "quiet"],
   },
   {
     slug: "palazzo-doria-pamphilj",
@@ -1389,7 +1331,6 @@ export const places: Place[] = [
       "Still a private family palazzo. The audio guide narrated by the heir, Prince Jonathan Doria Pamphilj, is unusually charming.",
     hours: "Generally daily 09:00-19:00; closed third Wednesday of the month.",
     website: "https://www.doriapamphilj.it/",
-    tags: ["gallery", "Caravaggio", "Velázquez"],
   },
   {
     slug: "palazzo-colonna",
@@ -1408,7 +1349,6 @@ export const places: Place[] = [
       "Open Saturday mornings only (and the first Saturday of the month is free). Stand on the cannonball lodged in the marble step — left from a 1849 siege.",
     hours: "Saturday 09:00-13:15 (last entry 12:15); occasionally Friday evenings.",
     website: "https://www.galleriacolonna.it/",
-    tags: ["gallery", "baroque", "Saturday only"],
   },
   {
     slug: "giardini-palazzo-colonna",
@@ -1427,7 +1367,6 @@ export const places: Place[] = [
       "Same Saturday-morning window as the gallery — the gardens are included in the full ticket and sit on the Quirinal slope behind the palazzo. The four pedestrian arches over Via della Pilotta are the giveaway from street level.",
     hours: "Saturday 09:00-13:15 with the Galleria Colonna visit; private tours otherwise.",
     website: "https://www.galleriacolonna.it/en/the-colonna-garden-the-quirinal-hill/",
-    tags: ["gardens", "Quirinale", "Saturday only"],
   },
   {
     slug: "palazzo-spada",
@@ -1446,7 +1385,6 @@ export const places: Place[] = [
       "The 'Prospettiva' looks like a 25m gallery and is under 9m. Small, weird, and very Rome — ten minutes from Campo de' Fiori.",
     hours: "Wednesday-Monday 08:30-19:30; closed Tuesday.",
     website: "https://galleriaspada.cultura.gov.it/",
-    tags: ["Borromini", "illusion", "Campo de' Fiori"],
   },
   {
     slug: "villa-farnesina",
@@ -1465,7 +1403,6 @@ export const places: Place[] = [
       "Pair with a Trastevere morning. Tuesdays the Stufetta del Cardinal Bibbiena (rare Raphael bathroom frescoes) is sometimes shown — ask at the desk.",
     hours: "Monday-Saturday 09:00-14:00; second Sunday of the month also open.",
     website: "https://www.villafarnesina.it/",
-    tags: ["Raphael", "renaissance", "Trastevere"],
   },
   {
     slug: "roseto-comunale",
@@ -1483,7 +1420,6 @@ export const places: Place[] = [
     details:
       "Only open late April through mid-June. Free, with the Circus Maximus and Palatine framing the view. A perfect Aventine afternoon.",
     hours: "Seasonal; typically open 08:30-19:30 from late April to mid-June.",
-    tags: ["seasonal", "Aventino", "free"],
   },
   {
     slug: "villa-sciarra",
@@ -1501,7 +1437,6 @@ export const places: Place[] = [
     details:
       "Ivy-wrapped stairs, mismatched statues, pine views toward the Altare della Patria. Easy to combine with a Gianicolo walk down to Trastevere.",
     hours: "Daily, dawn to dusk (varies by season).",
-    tags: ["garden", "Gianicolo", "hidden"],
   },
   {
     slug: "villa-doria-pamphilj-park",
@@ -1519,7 +1454,6 @@ export const places: Place[] = [
     details:
       "Locals run, walk dogs, and picnic here. Enter from the Gianicolo side to chain it with a Trastevere day.",
     hours: "Daily 07:00 to sunset.",
-    tags: ["park", "long walk", "local"],
   },
   {
     slug: "villa-celimontana",
@@ -1537,7 +1471,6 @@ export const places: Place[] = [
     details:
       "Calmer than Villa Borghese, full of palms and broken column bits. Hosts the Villa Celimontana Jazz Festival in summer.",
     hours: "Daily, dawn to sunset.",
-    tags: ["park", "Celio", "quiet"],
   },
   {
     slug: "quartiere-coppede",
@@ -1555,7 +1488,6 @@ export const places: Place[] = [
     details:
       "Twenty minutes from the centre. Walk Piazza Mincio (Fountain of the Frogs), the arch of the Fairy Houses, and the Spider Palace. Free, weird, ten-minute loop.",
     hours: "Always accessible; daytime is best for the details.",
-    tags: ["Art Nouveau", "free", "hidden"],
   },
   {
     slug: "aventine-keyhole",
@@ -1573,7 +1505,6 @@ export const places: Place[] = [
     details:
       "Free, takes two minutes. Three countries in one line of sight: Italy, the Order of Malta, the Vatican. Best in the morning when the dome is lit.",
     hours: "Always open; queue is usually short.",
-    tags: ["viewpoint", "free", "Aventino"],
   },
   {
     slug: "galleria-sciarra",
@@ -1591,7 +1522,6 @@ export const places: Place[] = [
     details:
       "Office building, but open to the public on weekdays. Sixty seconds off the Trevi axis and almost nobody knows it.",
     hours: "Weekdays during office hours; closed weekends.",
-    tags: ["free", "Art Nouveau", "Trevi"],
   },
   {
     slug: "capuchin-crypt",
@@ -1610,7 +1540,6 @@ export const places: Place[] = [
       "Strange, calm, and oddly moving. Half an hour at most. Skip if you're squeamish; otherwise, it's one of the most unusual rooms in Rome.",
     hours: "Daily 10:00-19:00; last entry 18:00.",
     website: "https://www.cappucciniviaveneto.it/",
-    tags: ["unusual", "Via Veneto", "museum"],
   },
   {
     slug: "centrale-montemartini",
@@ -1629,7 +1558,6 @@ export const places: Place[] = [
       "Off-branch of the Capitoline Museums. Half an hour by metro from the centre, and the contrast between marble gods and turbines is the whole point.",
     hours: "Tuesday-Sunday 09:00-19:00; closed Monday.",
     website: "https://www.centralemontemartini.org/",
-    tags: ["museum", "Ostiense", "industrial"],
   },
   {
     slug: "santa-maria-maggiore",
@@ -1649,7 +1577,6 @@ export const places: Place[] = [
       "The anchor of the Esquilino side: 5th-century mosaics along the nave and triumphal arch, a Bernini tomb, and the relic of the Holy Crib. Easy to pair with Monti or a Termini-side arrival.",
     hours: "Generally open daily 07:00-18:45; check official hours before going.",
     website: "https://www.vatican.va/various/basiliche/sm_maggiore/index_it.html",
-    tags: ["basilica", "Esquilino", "mosaics"],
   },
   {
     slug: "biblioteca-casanatense",
@@ -1668,7 +1595,6 @@ export const places: Place[] = [
       "Founded in 1701 by Cardinal Casanate. The trick is the weekday late-morning window: the monumental hall is open without a guided tour Monday-Friday, 11:30 to 13:00. Two minutes from Sant'Ignazio.",
     hours: "Salone Monumentale Mon-Fri 11:30-13:00; library reading rooms have separate hours.",
     website: "https://casanatense.cultura.gov.it/",
-    tags: ["library", "free", "near Pantheon"],
   },
   {
     slug: "biblioteca-apostolica-vaticana",
@@ -1687,7 +1613,6 @@ export const places: Place[] = [
       "Not a walk-in: entry requires academic credentials, a reference letter, and ID left at the Sant'Anna gate. Worth knowing it exists; for a casual visitor, the easier substitute is the Casanatense.",
     hours: "Mon-Fri 09:00-17:00 for accredited readers; tours rare.",
     website: "https://www.vaticanlibrary.va/",
-    tags: ["library", "Vatican", "scholars only"],
   },
   {
     slug: "gianicolo-terrace",
@@ -1705,7 +1630,6 @@ export const places: Place[] = [
     details:
       "The classic late-afternoon walk: up from Trastevere or down from Villa Doria Pamphilj, with the noon cannon at the parapet and a busts-of-Garibaldini avenue along the way.",
     hours: "Open at all times; cannon fires at noon.",
-    tags: ["viewpoint", "Gianicolo", "free"],
   },
   {
     slug: "villa-giustiniani-massimo",
@@ -1723,7 +1647,6 @@ export const places: Place[] = [
     details:
       "The casino (Casino Massimo Lancellotti) is the part worth chasing — three frescoed rooms by the Nazarene painters dedicated to Dante's Commedia, Ariosto, and Tasso. Now owned by the Custody of the Holy Land; visits are by appointment.",
     hours: "By appointment only; check Custodia di Terra Santa for current openings.",
-    tags: ["Nazarene", "Laterano", "by appointment"],
   },
   {
     slug: "sant-andrea-della-valle",
@@ -1742,7 +1665,6 @@ export const places: Place[] = [
     details:
       "Lanfranco's dome and Domenichino's pendentives are the headline; it's also the church of Act I of Tosca. Easy stop walking between Largo Argentina and Campo de' Fiori.",
     hours: "Generally daily 07:30-12:30 and 16:30-19:30; check before going.",
-    tags: ["basilica", "Baroque", "central"],
   },
   {
     slug: "musei-capitolini",
@@ -1762,7 +1684,6 @@ export const places: Place[] = [
       "Two palaces around Michelangelo's piazza, connected by the Tabularium gallery with a long view over the Forum. The big hits: the Capitoline Wolf, the original Marcus Aurelius bronze, the colossal Constantine fragments, the Dying Gaul, Caravaggio's St. John.",
     hours: "Daily 09:30-19:30; last entry 18:30.",
     website: "https://www.museicapitolini.org/en",
-    tags: ["museum", "Campidoglio", "Forum view"],
   },
   {
     slug: "villa-torlonia",
@@ -1781,7 +1702,6 @@ export const places: Place[] = [
       "The park is free. The Casina delle Civette is the one to chase — a Liberty-style house with Cambellotti stained glass. Casino Nobile adds the Mussolini bunker tour. Easy to combine with Quartiere Coppedè a few minutes north.",
     hours: "Park daily 07:00 to sunset; museums Tue-Sun 09:00-19:00.",
     website: "https://www.museivillatorlonia.it/",
-    tags: ["park", "Liberty", "Nomentano"],
   },
   {
     slug: "cimitero-acattolico",
@@ -1800,7 +1720,6 @@ export const places: Place[] = [
       "One of the most peaceful patches in Rome. Pair with a Testaccio lunch and a walk past the Pyramid of Cestius. Small donation appreciated at entry.",
     hours: "Monday-Saturday 09:00-17:00; Sunday 09:00-13:00.",
     website: "https://cemeteryrome.it/",
-    tags: ["cemetery", "Testaccio", "literary"],
   },
   {
     slug: "trattoria-polese",
@@ -1819,7 +1738,6 @@ export const places: Place[] = [
       "Old-school Roman service: fettuccine, saltimbocca, abbacchio. Best for the piazza terrace in warm months between Campo de' Fiori and Castel Sant'Angelo.",
     hours: "Check live hours before going.",
     website: "https://www.trattoriapolese.com/",
-    tags: ["trattoria", "Centro Storico", "terrace"],
   },
   {
     slug: "agrodolce-roma",
@@ -1838,7 +1756,6 @@ export const places: Place[] = [
       "Useful when the route is glued to Trevi and you want sit-down food without the tourist menu — Roman staples plus Neapolitan/Amalfi influence from the owner's family.",
     hours: "Check live hours before going.",
     website: "https://agrodolceroma.it/",
-    tags: ["Roman", "Neapolitan", "Trevi"],
   },
   {
     slug: "pasqualino-al-colosseo",
@@ -1857,7 +1774,6 @@ export const places: Place[] = [
       "Better than most Colosseum-adjacent options — actual Romans go for the cacio e pepe and abbacchio. Easy to slot in after a Forum/Colosseum morning.",
     hours: "Daily 09:00-23:00; check before going.",
     website: "https://pasqualinoalcolosseo.com/",
-    tags: ["trattoria", "Colosseum", "Celio"],
   },
   {
     slug: "trattoria-lilli",
@@ -1876,7 +1792,6 @@ export const places: Place[] = [
       "Cash-leaning, no fuss, Roman menu. Useful as a no-tourist-menu fallback on the Navona/Castel Sant'Angelo axis.",
     hours: "Check live hours before going.",
     website: "https://www.trattorialilli.it/",
-    tags: ["trattoria", "Ponte", "family-run"],
   },
   {
     slug: "enoteca-trastevere",
@@ -1895,7 +1810,6 @@ export const places: Place[] = [
       "A central Trastevere stop for wine plus a quick plate of pasta or cured meats — fits before or after a Santa Maria in Trastevere visit.",
     hours: "Daily 12:00-00:00.",
     website: "https://www.enotecatrastevere.it/",
-    tags: ["wine", "Trastevere", "pasta"],
   },
   {
     slug: "felice-a-testaccio",
@@ -1914,7 +1828,6 @@ export const places: Place[] = [
       "Book ahead — this is the one for cacio e pepe and Roman classics. Pair with a Testaccio market morning or a Pyramid-of-Cestius / Protestant Cemetery walk.",
     hours: "Daily 12:30-15:30 and 19:00-23:30.",
     website: "https://feliceatestaccio.com/",
-    tags: ["Testaccio", "cacio e pepe", "historic"],
   },
   {
     slug: "osteria-st-ana",
@@ -1933,7 +1846,6 @@ export const places: Place[] = [
       "Tucked just behind Piazza del Popolo on the Tridente side — useful for a sit-down dinner when the day is around Villa Borghese, Ara Pacis, or the river.",
     hours: "Check live hours before going.",
     website: "https://osteriastana.it/",
-    tags: ["osteria", "Piazza del Popolo", "Roman"],
   },
   {
     slug: "antica-osteria-di-pietra",
@@ -1951,7 +1863,6 @@ export const places: Place[] = [
     details:
       "Right on the Piazza di Pietra side of the Pantheon — a convenient sit-down option when central plans drift between the Pantheon and Trevi.",
     hours: "Check live hours before going.",
-    tags: ["osteria", "Piazza di Pietra", "central"],
   },
   {
     slug: "flavio-al-velavevodetto",
@@ -1970,7 +1881,6 @@ export const places: Place[] = [
       "Roman classics — carbonara, gricia, polpette al sugo. The dining rooms cut into the amphora-shard hill are the gimmick worth experiencing once.",
     hours: "Daily 12:30-15:00 and 19:30-23:00.",
     website: "https://www.ristorantevelavevodetto.it/",
-    tags: ["Testaccio", "Roman", "carbonara"],
   },
   {
     slug: "l-elementare-trastevere",
@@ -1989,7 +1899,6 @@ export const places: Place[] = [
       "Thin, crisp Roman pizza with careful toppings — the move when you want pizza but not the Ivo-style classic. A few minutes from Santa Maria in Trastevere.",
     hours: "Check live hours before going.",
     website: "https://www.pizzerialelementare.it/",
-    tags: ["pizza", "Trastevere", "thin crust"],
   },
   {
     slug: "180g-pizzeria",
@@ -2008,7 +1917,6 @@ export const places: Place[] = [
       "Worth the metro trip — one of the most-talked-about Roman pizzas in Rome. Drives a 50 Top Pizza-tier menu in an unfashionable east-side neighborhood.",
     hours: "Check live hours before going.",
     website: "https://180gpizzeriaromana.com/",
-    tags: ["pizza", "Centocelle", "50 Top"],
   },
   {
     slug: "mastrociccia",
@@ -2027,7 +1935,6 @@ export const places: Place[] = [
       "Long hours (open through the afternoon), Roman menu plus pizza — handy when you want food at off-peak times in the Navona/Pasquino loop.",
     hours: "Daily 08:00-00:00.",
     website: "https://www.mastrociccia.com/",
-    tags: ["osteria", "Piazza Navona", "all day"],
   },
   {
     slug: "ivo-a-trastevere",
@@ -2046,7 +1953,6 @@ export const places: Place[] = [
       "Cash-leaning, no reservations (under 10), bustling. The shape of a classic Trastevere pizza dinner: house wine, bruschetta, supplì, then pizza.",
     hours: "Mon-Sat 18:00-00:00; closed Tuesday.",
     website: "https://ivoatrastevere.it/",
-    tags: ["pizza", "Trastevere", "1962"],
   },
   {
     slug: "seu-pizza-illuminati",
@@ -2064,7 +1970,6 @@ export const places: Place[] = [
     details:
       "Halfway between Roman and Neapolitan dough, with seasonal, chef-y toppings. Book well in advance — one of the harder tables in Rome.",
     hours: "Check live hours before going; reservations recommended.",
-    tags: ["pizza", "creative", "Trastevere"],
   },
   {
     slug: "le-mani-in-pasta",
@@ -2082,7 +1987,6 @@ export const places: Place[] = [
     details:
       "Always full — book a few days ahead. Roman classics plus seafood pastas, in a small room a few minutes from Piazza Mastai.",
     hours: "Tue-Sun 12:30-15:00 and 19:30-00:00; closed Monday.",
-    tags: ["Trastevere", "seafood", "pasta"],
   },
   {
     slug: "da-benito-e-gilberto",
@@ -2100,7 +2004,6 @@ export const places: Place[] = [
     details:
       "Closer-to-50-year-old fish trattoria — sea urchins, oysters, simple Roman seafood plates. Useful for dinner after a Vatican Museums or Castel Sant'Angelo day.",
     hours: "Tue-Sat 12:00-14:30 and 19:00-23:30; closed Sunday and Monday.",
-    tags: ["seafood", "Borgo", "Vatican"],
   },
   {
     slug: "ripa-12",
@@ -2119,7 +2022,6 @@ export const places: Place[] = [
       "Crudités, raw bar, and fish-driven Roman cooking — a more grown-up Trastevere dinner option than the pizza-and-supplì circuit.",
     hours: "Check live hours before going.",
     website: "https://ripa12.com/",
-    tags: ["seafood", "Trastevere", "family"],
   },
   {
     slug: "mare-nostrum-seafood",
@@ -2138,7 +2040,6 @@ export const places: Place[] = [
       "Tagliolini Mare Nostrum, Sicilian-style tuna, fish couscous trapanese — book ahead, only thirty seats.",
     hours: "Tue-Fri 19:00-22:30; Sat-Sun lunch and dinner; closed Monday.",
     website: "https://www.marenostrumseafood.it/",
-    tags: ["seafood", "Sicilian", "Trastevere"],
   },
   {
     slug: "piccolo-arancio",
@@ -2157,7 +2058,6 @@ export const places: Place[] = [
       "Tight side street off the Trevi axis — pasta-leaning Roman menu with a softer modern touch, useful when the day is parked at Trevi/Quirinale.",
     hours: "Tue-Sun 12:00-15:30 and 18:30-00:00; closed Monday.",
     website: "https://www.piccoloarancio.it/",
-    tags: ["trattoria", "Trevi", "central"],
   },
   {
     slug: "konforme",
@@ -2175,7 +2075,6 @@ export const places: Place[] = [
     details:
       "Useful in Monti for an in-between meal — coffee, lunch, aperitivo — without committing to a full trattoria sit-down.",
     hours: "Check live hours before going.",
-    tags: ["cafe", "Monti", "all day"],
   },
   {
     slug: "neve-di-latte",
@@ -2193,7 +2092,6 @@ export const places: Place[] = [
     details:
       "Quieter and cleaner-flavored than the famous-name gelaterie. A good Prati or Piazza Cavour stop before walking back across the river.",
     hours: "Sun-Thu 11:00-23:00; Fri-Sat 11:00-00:00.",
-    tags: ["gelato", "Prati", "organic"],
   },
   {
     slug: "pompi",
@@ -2212,7 +2110,6 @@ export const places: Place[] = [
       "Five-minute walk from the Spanish Steps. Takeaway-only portions in plastic trays — easy as a moving sweet stop, not a sit-down.",
     hours: "Daily 10:00-22:30.",
     website: "https://barpompi.it/",
-    tags: ["tiramisu", "takeaway", "Spanish Steps"],
   },
   {
     slug: "il-maritozzaro",
@@ -2230,7 +2127,6 @@ export const places: Place[] = [
     details:
       "The hardcore version: maritozzi served late, traditionally as a post-club fix. Off the tourist Trastevere path, near Trastevere station.",
     hours: "Open into the early morning; check before going.",
-    tags: ["maritozzo", "Trastevere", "late night"],
   },
   {
     slug: "giuffre-gelateria",
@@ -2249,7 +2145,6 @@ export const places: Place[] = [
       "Easy to chain into a Trastevere or Gianicolo afternoon. Also bakes — good for pizza al taglio between scoops.",
     hours: "Check live hours before going.",
     website: "https://www.gelateriagiuffre.it/en/",
-    tags: ["gelato", "Trastevere", "fruit"],
   },
   {
     slug: "barnum-roma",
@@ -2268,7 +2163,6 @@ export const places: Place[] = [
       "Better-than-bar espresso, breakfast plates, and wifi — works as a calmer alternative to the espresso-counter routine in the heart of the Centro Storico.",
     hours: "Check live hours before going.",
     website: "https://www.barnumroma.com/",
-    tags: ["coffee", "brunch", "Campo de' Fiori"],
   },
   {
     slug: "er-baretto",
@@ -2286,7 +2180,6 @@ export const places: Place[] = [
     details:
       "On Via del Boschetto, the calmer Monti axis. Open from breakfast through evening — useful as both a quick coffee stop and a sweet detour.",
     hours: "Daily 07:00-23:00.",
-    tags: ["coffee", "Monti", "tiramisu"],
   },
   {
     slug: "33-giri",
@@ -2304,7 +2197,6 @@ export const places: Place[] = [
     details:
       "Records play through a proper sound system, not as background. Small plates and short cocktail list — Tuesday-Sunday only, reservation required.",
     hours: "Tue-Sun 18:00-23:00; reservations required.",
-    tags: ["listening bar", "vinyl", "Borgo"],
   },
   {
     slug: "bivium-restaurant",
@@ -2323,7 +2215,7 @@ export const places: Place[] = [
       "The street-level half of the Six Senses pair with Notos on the roof. Good for a polished aperitivo or an open-kitchen Italian meal in a 15th-century palazzo.",
     hours: "Check live hours before going.",
     website: "https://www.sixsenses.com/en/hotels-resorts/europe/italy/rome/dining/bivium-restaurant-cafe-bar/",
-    tags: ["Six Senses", "aperitivo", "central"],
+    recommendedBy: ["Apoline's reco"],
   },
   {
     slug: "santa-maria-della-pace",
@@ -2342,7 +2234,6 @@ export const places: Place[] = [
       "Two reasons to come: Raphael's Sibyls inside the church, and Bramante's geometric cloister next door (now an exhibition hall with a free coffee bar on the upper loggia).",
     hours: "Church limited hours; Chiostro del Bramante Mon-Fri 10:00-20:00, Sat-Sun 10:00-21:00.",
     website: "https://chiostrodelbramante.it/",
-    tags: ["Bramante", "Raphael", "Piazza Navona"],
   },
   {
     slug: "food-box-testaccio",
@@ -2360,7 +2251,6 @@ export const places: Place[] = [
     details:
       "Stall, not a restaurant. Go at market hours, order at the counter, eat standing. Pair with Mordi e Vai a few stalls over for a proper Testaccio market lunch.",
     hours: "Mon-Sat 07:00-15:30; closed Sunday.",
-    tags: ["street food", "Testaccio", "market"],
   },
   {
     slug: "mordi-e-vai",
@@ -2378,7 +2268,6 @@ export const places: Place[] = [
     details:
       "Box 15 in the Testaccio market, yellow sign in the northwest corner. The slow-cooked beef with chicory in a roll is the signature; lines move fast.",
     hours: "Mon-Sat 08:00-14:30; closed Sunday.",
-    tags: ["sandwich", "Testaccio", "market"],
   },
   {
     slug: "vinarius-testaccio",
@@ -2396,7 +2285,6 @@ export const places: Place[] = [
     details:
       "Bring your own bottle for the spina, or pick from bottled selections and Calabrian preserves, honey, balsamic, and oil. Pair the stop with Mordi e Vai and Food Box for a full-market loop.",
     hours: "Mon-Sat market hours; closed Sunday.",
-    tags: ["wine", "Testaccio", "market"],
   },
   {
     slug: "terrazza-caffarelli",
@@ -2415,7 +2303,6 @@ export const places: Place[] = [
       "Accessible without a museum ticket via the Campidoglio steps. Espresso, light lunch, aperitivo — the trick is that you get the panoramic view as a casual cafe, not a hotel rooftop.",
     hours: "Tue-Sun 09:30-19:30; closed Monday.",
     website: "https://www.terrazzacaffarelli.it/",
-    tags: ["rooftop", "Campidoglio", "free entry"],
   },
   {
     slug: "santi-cosma-e-damiano",
@@ -2435,7 +2322,6 @@ export const places: Place[] = [
       "Built into a hall of the Forum of Peace and Temple of Romulus. Two reasons to come: the 6th-century apse mosaic (Christ on a deep blue-and-sunset sky) and the large 18th-century Neapolitan presepio in a side room.",
     hours: "Daily, generally 10:00-13:00 and 15:00-19:00; presepio room may have separate hours.",
     website: "https://www.cosmadamiano.com/",
-    tags: ["mosaic", "Roman Forum", "early Christian"],
   },
   {
     slug: "sciascia-caffe",
@@ -2454,7 +2340,6 @@ export const places: Place[] = [
       "The signature move is the caffè espresso served in a cup lined with melted dark chocolate. Long counter, no rush, a proper old Roman bar.",
     hours: "Daily 07:00-21:00.",
     website: "https://www.sciasciacaffe1919.it/",
-    tags: ["historic", "Prati", "espresso al cioccolato"],
   },
   {
     slug: "sant-eustachio-il-caffe",
@@ -2474,7 +2359,7 @@ export const places: Place[] = [
       "Famously secretive about the cream on top of their gran caffè — order it senza zucchero if you don't want it sweet. Stand at the counter; tables are pricier.",
     hours: "Daily, generally 07:30 until 01:00 (later on weekends).",
     website: "https://caffesanteustachio.com/",
-    tags: ["historic", "espresso", "Pantheon area"],
+    recommendedBy: ["Apoline's reco"],
   },
   {
     slug: "suppli-roma",
@@ -2494,7 +2379,6 @@ export const places: Place[] = [
       "Daily-changing suppli (cacio e pepe, amatriciana, carbonara) plus pizza al taglio and fritti. Takeout only; eat them outside two steps away.",
     hours: "Mon-Sat 10:00-22:00; closed Sunday.",
     website: "https://www.suppliroma.it/",
-    tags: ["street food", "Trastevere", "supplì"],
   },
   {
     slug: "dar-poeta",
@@ -2514,7 +2398,6 @@ export const places: Place[] = [
       "Near Piazza Trilussa, on a vicolo with sonnets of Belli on the walls. Famous for a sweet ricotta-and-Nutella calzone dessert if you make it that far.",
     hours: "Daily, generally 12:00-15:00 and 18:30-23:30.",
     website: "https://www.darpoeta.com/",
-    tags: ["pizza", "Trastevere", "wood oven"],
   },
   {
     slug: "osteria-da-fortunata",
@@ -2534,7 +2417,6 @@ export const places: Place[] = [
       "The pasta makers in the doorway are the trademark. Walk-in only; show up before opening or expect to wait. Classic Roman menu plus seasonal specials.",
     hours: "Daily, generally 12:00-23:30.",
     website: "https://osteriadafortunata.it/",
-    tags: ["pasta", "Campo de' Fiori", "no reservations"],
   },
   {
     slug: "two-sizes",
@@ -2553,7 +2435,6 @@ export const places: Place[] = [
     details:
       "Classic coffee, pistachio, strawberry, peanut butter, caramel. Two sizes (small and large) — hence the name. Queue moves quickly; cash and card both fine.",
     hours: "Tue-Sun 11:00-22:00; closed Monday.",
-    tags: ["tiramisu", "dessert", "Piazza Navona"],
   },
   {
     slug: "come-il-latte",
@@ -2573,7 +2454,6 @@ export const places: Place[] = [
       "The dark and white chocolate fountains for dipping the cone are a small ritual. A good pause around Porta Pia, Via Veneto, or after a Galleria Borghese morning.",
     hours: "Daily, generally 11:30-23:00 (until midnight in summer).",
     website: "https://comeillatte.it/",
-    tags: ["gelato", "Sallustiano", "milk"],
   },
   {
     slug: "fior-di-luna",
@@ -2593,7 +2473,368 @@ export const places: Place[] = [
       "Single-origin chocolate, sorbets that taste like the fruit, no flashy mountains in the cases. Pair with a slow Trastevere walk afterwards.",
     hours: "Daily 11:30-23:00.",
     website: "https://fiordiluna.com/",
-    tags: ["gelato", "Trastevere", "natural"],
+  },
+  {
+    slug: "dal-bolognese-roma",
+    category: "restaurants",
+    title: "Dal Bolognese Roma",
+    marker: "DB",
+    kind: "Restaurant",
+    neighborhood: "Piazza del Popolo",
+    address: "Piazza del Popolo 1, 00187 Roma",
+    lat: 41.9098786,
+    lng: 12.476139,
+    image: image.trattoria,
+    imageAlt: "Terrace at Dal Bolognese on Piazza del Popolo",
+    shortDescription: "A see-and-be-seen Roman classic on Piazza del Popolo.",
+    details:
+      "Emilia-Roman pasta and polished service on one of the city's grandest piazze — best when you want a proper central dinner with a terrace mood.",
+    hours: "Check live hours before going.",
+    website: "https://www.dalbolognese.com/roma/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "dal-toscano",
+    category: "restaurants",
+    title: "Dal Toscano",
+    marker: "DT",
+    kind: "Steakhouse",
+    neighborhood: "Prati",
+    address: "Via Germanico 58-60, 00192 Roma",
+    lat: 41.907733,
+    lng: 12.4574373,
+    image: image.trattoria,
+    imageAlt: "Dining room at Dal Toscano near the Vatican",
+    shortDescription: "A Prati steakhouse built around Chianina beef and a serious wine list.",
+    details:
+      "Good when the group wants red meat rather than another pasta trattoria — handy between Prati, the Vatican, and Castel Sant'Angelo.",
+    hours: "Check live hours before going.",
+    website: "https://www.daltoscano.it/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "ginger-corte-laica",
+    category: "cafes",
+    title: "Ginger — Corte Laica",
+    marker: "G1",
+    kind: "Healthy cafe",
+    neighborhood: "Campo Marzio",
+    address: "Via del Corso 173, 00187 Roma",
+    lat: 41.9027858,
+    lng: 12.4797292,
+    image: image.coffee,
+    imageAlt: "Brunch plates at Ginger on Via del Corso",
+    shortDescription: "The Corso branch of Rome's healthy cafe chain — juices, brunch, and salads.",
+    details:
+      "A lighter stop between Piazza del Popolo and the Spanish Steps when you want something fresh rather than another espresso bar.",
+    hours: "Check live hours before going.",
+    website: "https://www.iloveginger.it/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "ginger-pantheon",
+    category: "cafes",
+    title: "Ginger — Pantheon",
+    marker: "G2",
+    kind: "Healthy cafe",
+    neighborhood: "Sant'Eustachio",
+    address: "Piazza di Sant'Eustachio 54, 00186 Roma",
+    lat: 41.8983028,
+    lng: 12.4757593,
+    image: image.coffee,
+    imageAlt: "Ginger cafe near the Pantheon",
+    shortDescription: "A bright healthy cafe a few steps from Sant'Eustachio and the Pantheon.",
+    details:
+      "Useful for breakfast or lunch between Piazza Navona, the Pantheon, and the Ghetto without committing to a full trattoria.",
+    hours: "Check live hours before going.",
+    website: "https://www.iloveginger.it/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "ginger-spagna",
+    category: "cafes",
+    title: "Ginger — Spagna",
+    marker: "G3",
+    kind: "Healthy cafe",
+    neighborhood: "Tridente",
+    address: "Via Borgognona 43-46, 00187 Roma",
+    lat: 41.9042435,
+    lng: 12.4795148,
+    image: image.coffee,
+    imageAlt: "Ginger Spagna near the Spanish Steps",
+    shortDescription: "The Spanish Steps Ginger — salads, juices, and a calmer lunch option in the luxury grid.",
+    details:
+      "Handy when shopping or museum-hopping around Spagna and you want something light before an evening reservation.",
+    hours: "Check live hours before going.",
+    website: "https://www.iloveginger.it/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "hostaria-da-pietro",
+    category: "restaurants",
+    title: "Hostaria Da Pietro",
+    marker: "PE",
+    kind: "Roman trattoria",
+    neighborhood: "Trevi",
+    address: "Via di Gesù e Maria 18, 00187 Roma",
+    lat: 41.9083454,
+    lng: 12.47823,
+    image: image.trattoria,
+    imageAlt: "Hostaria Da Pietro near Trevi",
+    shortDescription: "A small, old-school Roman hostaria tucked behind Trevi.",
+    details:
+      "Classic pasta and Roman mains in a tight room — a good central dinner when you want trattoria energy without the tourist-trap feel of the fountain square itself.",
+    hours: "Check live hours before going.",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "hotel-de-russie",
+    category: "bars",
+    title: "Hotel de Russie",
+    marker: "RU",
+    kind: "Hotel bar",
+    neighborhood: "Tridente",
+    address: "Via del Babuino 9, 00187 Roma",
+    lat: 41.9099435,
+    lng: 12.4774581,
+    image: image.cocktail,
+    imageAlt: "Stravinskij Bar garden at Hotel de Russie",
+    shortDescription: "Rocco Forte's hotel bar and secret garden between Spagna and Piazza del Popolo.",
+    details:
+      "The Stravinskij Bar and courtyard are the draw — polished cocktails and aperitivo in one of Rome's quiet luxury pockets.",
+    hours: "Check live hours before going.",
+    website: "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/dining/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "la-casetta-a-monti",
+    category: "cafes",
+    title: "La Casetta a Monti",
+    marker: "CM",
+    kind: "Cafe and bistro",
+    neighborhood: "Monti",
+    address: "Via della Madonna dei Monti 62, 00184 Roma",
+    lat: 41.8942896,
+    lng: 12.4901061,
+    image: image.coffee,
+    imageAlt: "La Casetta a Monti on a Monti side street",
+    shortDescription: "A small Monti cafe-bistro for coffee, brunch, and a slower neighborhood pause.",
+    details:
+      "Feels like a local living room on a residential Monti street — good before or after the Colosseum edge without staying in the tourist core.",
+    hours: "Check live hours before going.",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "maccheroni",
+    category: "restaurants",
+    title: "Maccheroni",
+    marker: "MK",
+    kind: "Pasta restaurant",
+    neighborhood: "Pantheon",
+    address: "Piazza delle Coppelle 44, 00186 Roma",
+    lat: 41.9006117,
+    lng: 12.4758715,
+    image: image.trattoria,
+    imageAlt: "Pasta at Maccheroni near the Pantheon",
+    shortDescription: "A pasta-focused room between Piazza Navona and the Pantheon.",
+    details:
+      "Built around daily pasta specials and a compact Roman menu — a strong pick when the day is already around the centro storico.",
+    hours: "Check live hours before going.",
+    website: "https://www.maccheroni.eu/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "osteria-da-fortunata-cancelleria",
+    category: "restaurants",
+    title: "Osteria da Fortunata — Cancelleria",
+    marker: "FC",
+    kind: "Pasta osteria",
+    neighborhood: "Piazza della Cancelleria",
+    address: "Piazza della Cancelleria 87, 00186 Roma",
+    lat: 41.896218,
+    lng: 12.472092,
+    image:
+      "https://www.osteriadafortunata.it/wp-content/uploads/2022/08/homepage-1.png",
+    imageAlt: "Fresh pasta at Osteria da Fortunata Cancelleria",
+    shortDescription: "The Cancelleria branch — same window pasta show, different piazza.",
+    details:
+      "Sister to the Campo de' Fiori original: fresh pasta rolled in the doorway, walk-in only, queue at opening. Piazza della Cancelleria is the setting here.",
+    hours: "Daily, generally 12:00-23:30.",
+    website: "https://osteriadafortunata.it/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "pierluigi",
+    category: "restaurants",
+    title: "Pierluigi",
+    marker: "PL",
+    kind: "Seafood restaurant",
+    neighborhood: "Regola",
+    address: "Piazza de' Ricci 144, 00186 Roma",
+    lat: 41.8967899,
+    lng: 12.468655,
+    image: image.trattoria,
+    imageAlt: "Seafood service at Pierluigi on Piazza de' Ricci",
+    shortDescription: "A long-running seafood institution on a small piazza near Campo de' Fiori.",
+    details:
+      "Crudo, pasta di mare, and a serious wine cellar — book ahead for a proper fish dinner when the group is done with carbonara.",
+    hours: "Check live hours before going.",
+    website: "https://www.pierluigi.it/",
+    phone: "+39 06 686 8713",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "retrobottega",
+    category: "restaurants",
+    title: "Retrobottega",
+    marker: "RB",
+    kind: "Modern Roman",
+    neighborhood: "Regola",
+    address: "Via d'Ascanio 26A, 00186 Roma",
+    lat: 41.889053,
+    lng: 12.4825134,
+    image: image.trattoria,
+    imageAlt: "Open kitchen at Retrobottega in Regola",
+    shortDescription: "A contemporary Roman kitchen with an open pass and a short, sharp menu.",
+    details:
+      "More modern than the classic trattorie — good when you want technique and seasonality without leaving the centro storico.",
+    hours: "Check live hours before going.",
+    website: "https://www.retrobottega.com/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "ristorante-angelina-testaccio",
+    category: "restaurants",
+    title: "Ristorante Angelina a Testaccio",
+    marker: "AN",
+    kind: "Roman trattoria",
+    neighborhood: "Testaccio",
+    address: "Via Galvani 24a, 00153 Roma",
+    lat: 41.8769911,
+    lng: 12.475074,
+    image: image.trattoria,
+    imageAlt: "Dining room at Angelina in Testaccio",
+    shortDescription: "A relaxed Testaccio trattoria for classic Roman cooking.",
+    details:
+      "Younger, easy energy in the market quarter — carbonara, coda, and the kind of dinner that fits after a Testaccio walk or Monte dei Cocci.",
+    hours: "Check live hours before going.",
+    website: "https://www.ristoranteangelina.it/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "salotto42",
+    category: "bars",
+    title: "Salotto42",
+    marker: "S4",
+    kind: "Cocktail bar",
+    neighborhood: "Piazza di Pietra",
+    address: "Piazza di Pietra 42, 00186 Roma",
+    lat: 41.900121,
+    lng: 12.479312,
+    image: image.cocktail,
+    imageAlt: "Cocktails at Salotto42 on Piazza di Pietra",
+    shortDescription: "A cocktail bar on Piazza di Pietra for after-dinner drinks near the Pantheon.",
+    details:
+      "Small room, strong list, central address — use it when dinner is done and you want one more stop before walking home through the lit-up centro.",
+    hours: "Check live hours before going.",
+    website: "https://www.salotto42.com/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "settimo-all-arancio",
+    category: "restaurants",
+    title: "Settimio all'Arancio",
+    marker: "SA",
+    kind: "Roman trattoria",
+    neighborhood: "Sant'Eustachio",
+    address: "Via dell'Arancio 50, 00186 Roma",
+    lat: 41.9044318,
+    lng: 12.4775289,
+    image: image.trattoria,
+    imageAlt: "Settimio all'Arancio trattoria interior",
+    shortDescription: "A no-frills Roman trattoria on Via dell'Arancio.",
+    details:
+      "Old-school pasta and secondi in a tight dining room — the kind of place Romans still treat as a neighborhood staple slightly off the main tourist drags.",
+    hours: "Check live hours before going.",
+    phone: "+39 06 687 4217",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "tonnarello",
+    category: "restaurants",
+    title: "Tonnarello",
+    marker: "TO",
+    kind: "Roman trattoria",
+    neighborhood: "Trastevere",
+    address: "Via della Paglia 1/2/3, 00153 Roma",
+    lat: 41.889804,
+    lng: 12.4693004,
+    image: image.trattoria,
+    imageAlt: "Busy dining room at Tonnarello in Trastevere",
+    shortDescription: "A loud, popular Trastevere trattoria known for tonnarelli and Roman classics.",
+    details:
+      "Expect a queue and a bustling room — go early if you hate waiting. Good anchor for a Trastevere evening when you want classic pasta in a high-energy setting.",
+    hours: "Check live hours before going.",
+    website: "https://www.tonnarello.it/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "tonnarello-scala",
+    category: "restaurants",
+    title: "Tonnarello Scala",
+    marker: "T2",
+    kind: "Roman trattoria",
+    neighborhood: "Trastevere",
+    address: "Piazza della Scala 19/21, 00153 Roma",
+    lat: 41.8909113,
+    lng: 12.4682918,
+    image: image.trattoria,
+    imageAlt: "Tonnarello Scala on Piazza della Scala",
+    shortDescription: "The second Tonnarello room on Piazza della Scala.",
+    details:
+      "Same Roman menu energy as the original on Via della Paglia — useful when the first location's wait is too long and you still want the same dishes.",
+    hours: "Check live hours before going.",
+    website: "https://www.tonnarello.it/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "urbana-47",
+    category: "restaurants",
+    title: "Urbana 47",
+    marker: "U4",
+    kind: "Bistro",
+    neighborhood: "Monti",
+    address: "Via Urbana 47, 00184 Roma",
+    lat: 41.896033,
+    lng: 12.493936,
+    image: image.trattoria,
+    imageAlt: "Brunch and dinner at Urbana 47 in Monti",
+    shortDescription: "A Monti bistro for brunch, lunch, and dinner on Via Urbana.",
+    details:
+      "Relaxed all-day room in the Monti grid — handy near the Colosseum and Santa Maria Maggiore when you want something between cafe and full trattoria.",
+    hours: "Check live hours before going.",
+    website: "https://www.urbana47.it/",
+    recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "spazio-sette-libreria",
+    category: "shops",
+    title: "Spazio Sette Libreria",
+    marker: "SS",
+    kind: "Design bookshop",
+    neighborhood: "Sant'Eustachio",
+    address: "Via dei Barbieri 7, 00186 Roma",
+    lat: 41.8951815,
+    lng: 12.4755548,
+    image: "https://www.liminarivista.it/wp-content/uploads/2025/04/Spazio-Sette_sala-centrale_libreria-1585x1080.jpg",
+    imageAlt: "Central hall of Spazio Sette Libreria inside Palazzo Cavallerini Lazzaroni",
+    shortDescription: "A bookshop inside a frescoed Renaissance palazzo near Largo Argentina.",
+    details:
+      "Set in Palazzo Cavallerini Lazzaroni a few steps from Largo Argentina — calm browsing through design, art, and general titles in a frescoed room.",
+    hours: "Check live hours before going.",
+    website: "https://www.instagram.com/spaziosette_libreria/",
+    phone: "+39 06 6869747",
+    recommendedBy: ["Apoline's reco"],
   },
 ];
 

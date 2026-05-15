@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, Clock, Globe2, MapPin, Navigation, Phone, Tags } from "lucide-react";
+import { ArrowLeft, Clock, Globe2, MapPin, Navigation, Phone } from "lucide-react";
 import { CategoryIcon } from "@/components/CategoryIcon";
 import { RomeMap } from "@/components/RomeMap";
 import { SiteLayout } from "@/components/SiteLayout";
@@ -61,10 +61,20 @@ function DetailPage() {
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
                 {meta.navLabel}
               </Link>
-              <p className="mt-8 flex items-center gap-2 text-xs uppercase text-primary">
-                <CategoryIcon category={cat} className="h-4 w-4" />
-                {place.kind} · {place.neighborhood}
-              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-2">
+                <p className="flex items-center gap-2 text-xs uppercase text-primary">
+                  <CategoryIcon category={cat} className="h-4 w-4" />
+                  {place.kind} · {place.neighborhood}
+                </p>
+                {place.recommendedBy?.map((reco) => (
+                  <span
+                    key={reco}
+                    className="rounded-md border border-primary/30 bg-primary/10 px-2 py-1 text-xs font-medium text-primary"
+                  >
+                    {reco}
+                  </span>
+                ))}
+              </div>
               <h1 className="mt-3 font-serif text-4xl leading-none sm:text-5xl md:text-7xl">
                 {place.title}
               </h1>
@@ -108,23 +118,6 @@ function DetailPage() {
                   }
                 />
               )}
-            </div>
-
-            <div className="rounded-lg border border-border bg-card p-5">
-              <h2 className="flex items-center gap-2 font-serif text-3xl">
-                <Tags className="h-5 w-5 text-primary" aria-hidden="true" />
-                Tags
-              </h2>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {place.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-md border border-border bg-background px-3 py-2 text-sm text-muted-foreground"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
 
