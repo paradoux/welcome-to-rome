@@ -1,5 +1,7 @@
 # Deploys the TanStack Start app in rome-places/ to Cloudflare Workers.
-# Add repository secrets: CLOUDFLARE_API_TOKEN (Edit Cloudflare Workers template).
+# Repository secrets (Settings → Secrets and variables → Actions):
+#   CLOUDFLARE_API_TOKEN — Cloudflare API token (Edit Cloudflare Workers template)
+#   CLOUDFLARE_ACCOUNT_ID — Account ID from wrangler whoami
 name: Deploy to Cloudflare Workers
 
 on:
@@ -24,7 +26,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version-file: rome-places/.nvmrc
           cache: npm
           cache-dependency-path: rome-places/package-lock.json
 
@@ -32,6 +34,9 @@ jobs:
         run: npm ci
 
       - name: Build and deploy
-        run: npm run deploy
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: rome-places
+          command: deploy

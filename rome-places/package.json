@@ -1,6 +1,9 @@
 {
   "name": "rome-places-map",
   "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "sideEffects": false,
   "type": "module",
   "scripts": {

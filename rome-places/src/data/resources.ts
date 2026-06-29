@@ -37,29 +37,6 @@ export interface Place {
   recommendedBy?: string[];
 }
 
-const image = {
-  trattoria:
-    "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1400&q=80",
-  pizza:
-    "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1400&q=80",
-  bakery:
-    "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=80",
-  gelato:
-    "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=1400&q=80",
-  coffee:
-    "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80",
-  wine: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1400&q=80",
-  cocktail:
-    "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1400&q=80",
-  rome: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1400&q=80",
-  museum:
-    "https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1400&q=80",
-  garden:
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
-  boutique:
-    "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=1400&q=80",
-};
-
 export const categoryMeta: Record<Category, CategoryMeta> = {
   restaurants: {
     label: "Restaurants",
@@ -141,8 +118,9 @@ export const places: Place[] = [
     address: "Borgo Vittorio 92, 00193 Roma",
     lat: 41.9043236,
     lng: 12.4605848,
-      image: "https://media.evendo.com/locations-resized/RestaurantImages/1920x466/43b72e8a-a127-4933-a67b-31796a396f1a",
-      imageAlt: "Interior of Interno 92 in Borgo",
+    image:
+      "https://media.evendo.com/locations-resized/RestaurantImages/1920x466/43b72e8a-a127-4933-a67b-31796a396f1a",
+    imageAlt: "Interior of Interno 92 in Borgo",
     shortDescription: "A small Borgo restaurant close to the Vatican and Castel Sant'Angelo.",
     details:
       "Good for a practical lunch or dinner when the day is already around Prati, Borgo, or the Vatican side of town.",
@@ -159,8 +137,8 @@ export const places: Place[] = [
     address: "Via Luigi Santini 22/23, 00153 Roma",
     lat: 41.8871605,
     lng: 12.4686423,
-      image: "https://www.lelevainroma.it/wp-content/uploads/2025/01/061B0456.jpg",
-      imageAlt: "Le Levain bakery interior in Trastevere",
+    image: "https://www.lelevainroma.it/wp-content/uploads/2025/01/061B0456.jpg",
+    imageAlt: "Le Levain bakery interior in Trastevere",
     shortDescription: "A French-style bakery and pastry stop tucked into Trastevere.",
     details:
       "Use it for breakfast, a croissant break, or a calmer sweet stop before walking deeper into Trastevere.",
@@ -178,8 +156,9 @@ export const places: Place[] = [
     address: "Via Piave 55, 00187 Roma",
     lat: 41.9102507,
     lng: 12.4983822,
-      image: "https://www.farorome.com/media/blog/articles/aliena-la-nostra-torrefazione/28457525-793f-496b-a67f-74de8ef6e36f.jpg",
-      imageAlt: "Faro Rome specialty coffee roastery",
+    image:
+      "https://www.farorome.com/media/blog/articles/aliena-la-nostra-torrefazione/28457525-793f-496b-a67f-74de8ef6e36f.jpg",
+    imageAlt: "Faro Rome specialty coffee roastery",
     shortDescription: "Specialty coffee, brunch energy, and a good north-center reset.",
     details:
       "A strong option when you want coffee handled with more precision than the usual bar routine.",
@@ -197,8 +176,8 @@ export const places: Place[] = [
     address: "Via del Portico d'Ottavia 21/A-22, 00186 Roma",
     lat: 41.8926589,
     lng: 12.4783687,
-      image: "https://www.giggetto.it/wp-content/uploads/2023/05/giggetto-1.jpg",
-      imageAlt: "Dining room at Giggetto al Portico d'Ottavia",
+    image: "https://www.giggetto.it/wp-content/uploads/2023/05/giggetto-1.jpg",
+    imageAlt: "Dining room at Giggetto al Portico d'Ottavia",
     shortDescription: "A historic ghetto address for Roman-Jewish classics.",
     details:
       "The obvious play is the old-school Roman-Jewish lane: artichokes, pasta, and Portico d'Ottavia atmosphere.",
@@ -216,8 +195,9 @@ export const places: Place[] = [
     address: "Via Piave 62/64, 00187 Roma",
     lat: 41.9096271,
     lng: 12.4982672,
-      image: "https://www.alfornodellasoffitta.it/wp-content/uploads/2023/12/318505611_564456529021540_1005959780166091651_n.jpg",
-      imageAlt: "Pizza at Al Forno della Soffitta",
+    image:
+      "https://www.alfornodellasoffitta.it/wp-content/uploads/2023/12/318505611_564456529021540_1005959780166091651_n.jpg",
+    imageAlt: "Pizza at Al Forno della Soffitta",
     shortDescription: "Pizza, Roman plates, and a reliable dinner zone near Porta Pia.",
     details:
       "A useful north-center dinner stop when the evening is around Via Veneto, Porta Pia, or Termini-adjacent hotels.",
@@ -235,8 +215,9 @@ export const places: Place[] = [
     address: "Vicolo del Gallo 4, 00186 Roma",
     lat: 41.8955856,
     lng: 12.4713111,
-      image: "https://cdn.thefork.com/tf-lab/image/upload/w_1400,q_92,f_auto/restaurant/28145742-b54f-441a-8716-125a10a33045/ecbe65b6-282b-4b41-8043-ecd897abe169.jpg",
-      imageAlt: "Interior of Antica Latteria near Campo de' Fiori",
+    image:
+      "https://cdn.thefork.com/tf-lab/image/upload/w_1400,q_92,f_auto/restaurant/28145742-b54f-441a-8716-125a10a33045/ecbe65b6-282b-4b41-8043-ecd897abe169.jpg",
+    imageAlt: "Interior of Antica Latteria near Campo de' Fiori",
     shortDescription: "A tiny, central stop near Campo de' Fiori.",
     details:
       "Best treated as a compact wine-and-bites pause before or after Campo de' Fiori and Piazza Navona wandering.",
@@ -254,8 +235,8 @@ export const places: Place[] = [
     address: "Piazza dei Sanniti 46, 00185 Roma",
     lat: 41.8984868,
     lng: 12.5167057,
-      image: "https://www.pommidorodal1890.com/images/2020/11/26/home-8-rev-5-img-9.jpg",
-      imageAlt: "Trattoria Pommidoro dal 1890 in San Lorenzo",
+    image: "https://www.pommidorodal1890.com/images/2020/11/26/home-8-rev-5-img-9.jpg",
+    imageAlt: "Trattoria Pommidoro dal 1890 in San Lorenzo",
     shortDescription: "A long-running San Lorenzo institution with a literary shadow.",
     details:
       "A more neighborhood-driven stop, useful when you want to get beyond the postcard center for a proper Roman meal.",
@@ -273,8 +254,8 @@ export const places: Place[] = [
     address: "Via dei Gracchi 272, 00192 Roma",
     lat: 41.9091879,
     lng: 12.46687,
-      image: "https://gelateriadeigracchi.it/wp-content/uploads/2025/07/gracchi-home2.webp",
-      imageAlt: "Gelato counter at Gelateria dei Gracchi",
+    image: "https://gelateriadeigracchi.it/wp-content/uploads/2025/07/gracchi-home2.webp",
+    imageAlt: "Gelato counter at Gelateria dei Gracchi",
     shortDescription: "A Prati gelato classic near the Vatican side of the river.",
     details:
       "Good after Vatican/Prati errands, especially if you want the gelato stop built into the route rather than added later.",
@@ -286,14 +267,14 @@ export const places: Place[] = [
     slug: "ruma-bottega-cucina-agricola",
     category: "restaurants",
     title: "Ruma Bottega & Cucina Agricola",
-    marker: "RU",
+    marker: "RM",
     kind: "Bottega and cucina agricola",
     neighborhood: "Parione",
     address: "Via di Parione 13, 00186 Roma",
     lat: 41.8986857,
     lng: 12.4708873,
-      image: "https://static.wixstatic.com/media/e1932b_eb58595f48dd4e019c7f817f73ee66ca~mv2.jpg",
-      imageAlt: "Interior of Ruma Bottega near Piazza Navona",
+    image: "https://static.wixstatic.com/media/e1932b_eb58595f48dd4e019c7f817f73ee66ca~mv2.jpg",
+    imageAlt: "Interior of Ruma Bottega near Piazza Navona",
     shortDescription: "A farm-to-table bottega near Piazza Navona.",
     details:
       "This is a good central pick when you want vegetables, pantry goods, wine, and a more ingredient-led Roman pause.",
@@ -312,8 +293,8 @@ export const places: Place[] = [
     address: "Piazza di San Lorenzo in Lucina 29, 00186 Roma",
     lat: 41.90374,
     lng: 12.47803,
-      image: "https://ciampini.com/wp-content/uploads/2022/07/cia_01.jpg",
-      imageAlt: "Ciampini terrace on Piazza di San Lorenzo in Lucina",
+    image: "https://ciampini.com/wp-content/uploads/2022/07/cia_01.jpg",
+    imageAlt: "Ciampini terrace on Piazza di San Lorenzo in Lucina",
     shortDescription: "A polished central cafe and gelateria on a handsome piazza.",
     details:
       "Good for a smarter coffee, gelato, or aperitivo pause between the Spanish Steps, Trevi, and the Pantheon.",
@@ -332,8 +313,8 @@ export const places: Place[] = [
     address: "Via de' Lucchesi 28, 00187 Roma",
     lat: 41.8996779,
     lng: 12.483976,
-      image: "https://ristorantetrivioroma.com/wp-content/uploads/2023/03/Locale-fuori.png",
-      imageAlt: "Storefront of L'antica pizzeria di Trevi",
+    image: "https://ristorantetrivioroma.com/wp-content/uploads/2023/03/Locale-fuori.png",
+    imageAlt: "Storefront of L'antica pizzeria di Trevi",
     shortDescription: "A pizzeria a few turns from the Trevi Fountain.",
     details:
       "Useful when the route is aggressively central and you want something close without drifting too far from Trevi.",
@@ -350,8 +331,9 @@ export const places: Place[] = [
     address: "Via Crescenzio 84, 00193 Roma",
     lat: 41.9061104,
     lng: 12.4600994,
-      image: "https://www.lazanzararoma.com/wp-content/uploads/2022/10/la_zanzara_roma_orange_dish.jpg",
-      imageAlt: "Signature dish at La Zanzara in Prati",
+    image:
+      "https://www.lazanzararoma.com/wp-content/uploads/2022/10/la_zanzara_roma_orange_dish.jpg",
+    imageAlt: "Signature dish at La Zanzara in Prati",
     shortDescription: "A buzzy Prati restaurant-bar for food, drinks, and late energy.",
     details:
       "An easy fit after Vatican-side plans when you want the place to carry some nightlife rather than just dinner.",
@@ -369,8 +351,8 @@ export const places: Place[] = [
     address: "Piazza della Gensola 15, 00153 Roma",
     lat: 41.8895149,
     lng: 12.4765446,
-      image: "https://lagensola.com/wp-content/uploads/2022/07/GensolaRoma_Home021-1600x900-1.jpg",
-      imageAlt: "Dining room at Osteria La Gensola in Trastevere",
+    image: "https://lagensola.com/wp-content/uploads/2022/07/GensolaRoma_Home021-1600x900-1.jpg",
+    imageAlt: "Dining room at Osteria La Gensola in Trastevere",
     shortDescription: "A Trastevere osteria with a reputation for seafood.",
     details:
       "A Josi recommendation, and one to keep for the Trastevere dinner cluster rather than a random cross-town sprint.",
@@ -389,8 +371,8 @@ export const places: Place[] = [
     address: "Vicolo di San Giuliano 2, 00186 Roma",
     lat: 41.8996972,
     lng: 12.4681914,
-      image: "http://www.giuliopassamilolio.it/images/showcase/thumbs/01.jpg",
-      imageAlt: "Inside Giulio Passami l'Olio",
+    image: "http://www.giuliopassamilolio.it/images/showcase/thumbs/01.jpg",
+    imageAlt: "Inside Giulio Passami l'Olio",
     shortDescription: "A wine-friendly restaurant between Ponte and the river.",
     details:
       "Another Josi recommendation, well placed for a central evening around Piazza Navona, Castel Sant'Angelo, or the river.",
@@ -409,8 +391,9 @@ export const places: Place[] = [
     address: "Via dei Vascellari 29, 00153 Roma",
     lat: 41.8880864,
     lng: 12.477807,
-      image: "https://www.eatingeurope.com/wp-content/uploads/2019/01/Snack_handout_at_Da_Enzo_29_Rome-9-2.jpg",
-      imageAlt: "Service at Trattoria da Enzo al 29 in Trastevere",
+    image:
+      "https://www.eatingeurope.com/wp-content/uploads/2019/01/Snack_handout_at_Da_Enzo_29_Rome-9-2.jpg",
+    imageAlt: "Service at Trattoria da Enzo al 29 in Trastevere",
     shortDescription: "A tiny Trastevere trattoria famous enough to require patience.",
     details:
       "Keep it for a moment when you can queue, eat simply, and enjoy the ritual instead of squeezing it between timed bookings.",
@@ -428,8 +411,8 @@ export const places: Place[] = [
     address: "Campo de' Fiori 22, 00186 Roma",
     lat: 41.8958016,
     lng: 12.4715199,
-      image: "https://anamericaninrome.com/wp-content/uploads/2015/08/DSCF0677.jpg",
-      imageAlt: "Pizza bianca counter at Forno Campo de' Fiori",
+    image: "https://anamericaninrome.com/wp-content/uploads/2015/08/DSCF0677.jpg",
+    imageAlt: "Pizza bianca counter at Forno Campo de' Fiori",
     shortDescription: "An essential bakery counter right on Campo de' Fiori.",
     details:
       "Perfect for pizza bianca, bread, and a quick snack that belongs in the route rather than a formal meal slot.",
@@ -448,8 +431,9 @@ export const places: Place[] = [
     address: "Via del Viminale 44, 00184 Roma",
     lat: 41.9002016,
     lng: 12.4958866,
-      image: "https://www.lamatriciana.it/cms/wp-content/uploads/2024/12/Foto-DEF-scaled-1000x600.jpg",
-      imageAlt: "Dining room at La Matriciana near Teatro dell'Opera",
+    image:
+      "https://www.lamatriciana.it/cms/wp-content/uploads/2024/12/Foto-DEF-scaled-1000x600.jpg",
+    imageAlt: "Dining room at La Matriciana near Teatro dell'Opera",
     shortDescription: "A historic restaurant near Teatro dell'Opera and Termini.",
     details:
       "Best kept for an Opera/Termini side plan when a classic Roman dining room makes more sense than crossing town.",
@@ -467,8 +451,8 @@ export const places: Place[] = [
     address: "Via dei Giubbonari 21, 00186 Roma",
     lat: 41.89422,
     lng: 12.4742602,
-      image: "https://salumeriaroscioli.com/cdn/shop/files/7Y4A4795.png?v=1729181041&width=1600",
-      imageAlt: "Counter at Roscioli Salumeria con Cucina",
+    image: "https://salumeriaroscioli.com/cdn/shop/files/7Y4A4795.png?v=1729181041&width=1600",
+    imageAlt: "Counter at Roscioli Salumeria con Cucina",
     shortDescription: "A beloved salumeria-restaurant near Campo de' Fiori.",
     details:
       "A serious food stop: cured things, cheese, pasta, wine, and the feeling that every shelf is part of dinner.",
@@ -487,8 +471,8 @@ export const places: Place[] = [
     address: "Vicolo delle Bollette 13, 00187 Roma",
     lat: 41.9005906,
     lng: 12.4825609,
-      image: "https://ristorantealmororoma.it/wp-content/uploads/2018/07/IMG_2109ok_2-625x417.jpg",
-      imageAlt: "Dining room at Trattoria al Moro just off Trevi",
+    image: "https://ristorantealmororoma.it/wp-content/uploads/2018/07/IMG_2109ok_2-625x417.jpg",
+    imageAlt: "Dining room at Trattoria al Moro just off Trevi",
     shortDescription: "A classic, polished trattoria just off Trevi.",
     details:
       "A grown-up central option where the location is wildly convenient but the mood is more old Rome than tourist churn.",
@@ -507,8 +491,9 @@ export const places: Place[] = [
     address: "Via di Monserrato 35, 00186 Roma",
     lat: 41.8961662,
     lng: 12.4692835,
-      image: "https://images.squarespace-cdn.com/content/v1/5a79d6a10100274969cc473a/1521558110173-LP5SL8A2HZ40AGUJL89K/unnamed.jpg",
-      imageAlt: "Chez Dede boutique on Via di Monserrato",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/5a79d6a10100274969cc473a/1521558110173-LP5SL8A2HZ40AGUJL89K/unnamed.jpg",
+    imageAlt: "Chez Dede boutique on Via di Monserrato",
     shortDescription: "A design-led Roman boutique stop near Via Giulia.",
     details:
       "More boutique than restaurant, but it belongs on the map as a stylish pause in the Campo/Navona/Via Giulia loop.",
@@ -526,8 +511,8 @@ export const places: Place[] = [
     address: "Via degli Uffici del Vicario 40, 00186 Roma",
     lat: 41.9010573,
     lng: 12.4772481,
-      image: "https://www.giolitti.it/wp-content/uploads/2025/07/gelateria-giolitti.jpg",
-      imageAlt: "Historic counter at Giolitti gelateria near the Pantheon",
+    image: "https://www.giolitti.it/wp-content/uploads/2025/07/gelateria-giolitti.jpg",
+    imageAlt: "Historic counter at Giolitti gelateria near the Pantheon",
     shortDescription: "A historic gelateria and cafe near the Pantheon.",
     details:
       "Crowded, famous, and still useful: the move is to know it is central and lean into the old Roman cafe mood.",
@@ -545,8 +530,8 @@ export const places: Place[] = [
     address: "Via del Monte della Farina 28/29, 00186 Roma",
     lat: 41.8945802,
     lng: 12.4748263,
-      image: "https://emmapizzeria.com/wp-content/uploads/2021/04/dj9a0359_17485768578_o.jpg",
-      imageAlt: "Pizza romana on the counter at Emma Pizzeria",
+    image: "https://emmapizzeria.com/wp-content/uploads/2021/04/dj9a0359_17485768578_o.jpg",
+    imageAlt: "Pizza romana on the counter at Emma Pizzeria",
     shortDescription: "A Roscioli-family pizzeria for thin Roman-style pizza near Largo Argentina.",
     details:
       "Good central pick when the plan is pizza without going to Trastevere: thin crust, Roscioli-grade ingredients, and a proper sit-down room a few steps from Campo de' Fiori.",
@@ -563,9 +548,11 @@ export const places: Place[] = [
     address: "Via Giusti 18, 00185 Roma",
     lat: 41.8943728,
     lng: 12.5078459,
-      image: "https://i2.wp.com/www.puntarellarossa.it/wp/wp-content/uploads/2021/11/Forno-Conti-Roma.jpeg?fit=2016%2C1134&ssl=1",
-      imageAlt: "Breads on display at Forno Conti in Esquilino",
-    shortDescription: "An artisan bakery and cafe near Piazza Vittorio for bread, pastries, and breakfast.",
+    image:
+      "https://i2.wp.com/www.puntarellarossa.it/wp/wp-content/uploads/2021/11/Forno-Conti-Roma.jpeg?fit=2016%2C1134&ssl=1",
+    imageAlt: "Breads on display at Forno Conti in Esquilino",
+    shortDescription:
+      "An artisan bakery and cafe near Piazza Vittorio for bread, pastries, and breakfast.",
     details:
       "Useful when the morning is on the Esquilino side: a proper neighborhood forno for breakfast, pastries, and a calmer coffee stop a few minutes from Piazza Dante and Piazza Vittorio.",
     hours: "Check live hours before going.",
@@ -581,8 +568,8 @@ export const places: Place[] = [
     address: "Via degli Zingari 54A, 00184 Roma",
     lat: 41.8946423,
     lng: 12.4929718,
-      image: "https://img3.restaurantguru.com/w550/h367/r9ce-Mizios-Street-Food-design-2025-08.jpg",
-      imageAlt: "Mizio's street food shop in Monti",
+    image: "https://img3.restaurantguru.com/w550/h367/r9ce-Mizios-Street-Food-design-2025-08.jpg",
+    imageAlt: "Mizio's street food shop in Monti",
     shortDescription: "A tiny Monti sandwich counter for a quick, no-fuss lunch.",
     details:
       "The play here is a fast, generous sandwich on the way to or from the Colosseum side of Monti — short menu, takeaway energy, lunch-shaped.",
@@ -598,8 +585,9 @@ export const places: Place[] = [
     address: "Via dei Coronari 65/66, 00186 Roma",
     lat: 41.9004694,
     lng: 12.4695705,
-      image: "https://anamericaninrome.com/wp-content/uploads/2016/08/Gelateria-del-Teatro-Rome-6.jpg",
-      imageAlt: "Gelateria del Teatro on Via dei Coronari",
+    image:
+      "https://anamericaninrome.com/wp-content/uploads/2016/08/Gelateria-del-Teatro-Rome-6.jpg",
+    imageAlt: "Gelateria del Teatro on Via dei Coronari",
     shortDescription: "Creative gelato near Via dei Coronari.",
     details:
       "A neat sweet stop when the route is between Piazza Navona, Ponte, and Castel Sant'Angelo.",
@@ -617,8 +605,8 @@ export const places: Place[] = [
     address: "Via dello Statuto 60/62, 00185 Roma",
     lat: 41.8948568,
     lng: 12.5009038,
-      image: "https://anamericaninrome.com/wp-content/uploads/2015/11/2015-11-07-10.52.25.jpg",
-      imageAlt: "Pastries and maritozzi at Regoli Pasticceria",
+    image: "https://anamericaninrome.com/wp-content/uploads/2015/11/2015-11-07-10.52.25.jpg",
+    imageAlt: "Pastries and maritozzi at Regoli Pasticceria",
     shortDescription: "A historic pastry shop in Esquilino.",
     details:
       "Make this the sweet stop around Santa Maria Maggiore, Monti, or the Termini side of a day.",
@@ -634,8 +622,9 @@ export const places: Place[] = [
     address: "Vicolo di Santa Maria in Cappella 6, 00153 Roma",
     lat: 41.8871453,
     lng: 12.4774768,
-      image: "https://www.puntarellarossa.it/wp/wp-content/uploads/2025/06/puntarellarossa_loratorio_trastevere_roma.jpg",
-      imageAlt: "Outdoor cocktail bar at L'Oratorio Trastevere",
+    image:
+      "https://www.puntarellarossa.it/wp/wp-content/uploads/2025/06/puntarellarossa_loratorio_trastevere_roma.jpg",
+    imageAlt: "Outdoor cocktail bar at L'Oratorio Trastevere",
     shortDescription: "A Trastevere bar close to the river and the quieter lanes.",
     details:
       "Keep it for a drink before or after dinner when you are already south of Ponte Sisto.",
@@ -651,8 +640,8 @@ export const places: Place[] = [
     address: "Piazza di San Calisto 3/5, 00153 Roma",
     lat: 41.8890547,
     lng: 12.4707375,
-      image: "https://barsancalisto.it/wp-content/uploads/2021/07/bar_san_calisto-2-700x441.jpg",
-      imageAlt: "Bar San Calisto in Trastevere",
+    image: "https://barsancalisto.it/wp-content/uploads/2021/07/bar_san_calisto-2-700x441.jpg",
+    imageAlt: "Bar San Calisto in Trastevere",
     shortDescription: "A beloved, unfussy Trastevere square bar.",
     details: "Cheap, lively, and best when you want the piazza itself to be part of the drink.",
     hours: "Check live hours before going.",
@@ -667,8 +656,8 @@ export const places: Place[] = [
     address: "Viale delle Belle Arti 131, 00197 Roma",
     lat: 41.9173991,
     lng: 12.4815472,
-      image: "https://www.caffedellearti.it/wp-content/uploads/2023/07/DSCF7780-scaled.jpg",
-      imageAlt: "Terrace at Caffe delle Arti among the pines of the GNAM",
+    image: "https://www.caffedellearti.it/wp-content/uploads/2023/07/DSCF7780-scaled.jpg",
+    imageAlt: "Terrace at Caffe delle Arti among the pines of the GNAM",
     shortDescription: "A cafe near the Galleria Nazionale and Villa Borghese.",
     details: "Works well as the civilized pause between museum time and a Villa Borghese walk.",
     hours: "Check live hours before going.",
@@ -702,8 +691,9 @@ export const places: Place[] = [
     address: "Via di San Nicola da Tolentino 14, 00187 Roma",
     lat: 41.9049031,
     lng: 12.4912107,
-      image: "https://cache.marriott.com/is/image/marriotts7prod/eb-romeb-the-roof-aperitivo29676-29095:Pano-Hor?downsize=760:*",
-      imageAlt: "Aperitivo terrace at The Roof at the Rome EDITION",
+    image:
+      "https://cache.marriott.com/is/image/marriotts7prod/eb-romeb-the-roof-aperitivo29676-29095:Pano-Hor?downsize=760:*",
+    imageAlt: "Aperitivo terrace at The Roof at the Rome EDITION",
     shortDescription: "A polished rooftop option around the Trevi/Via Veneto side.",
     details:
       "Use it for a more dressed-up terrace drink when the evening is already in the north-center.",
@@ -721,8 +711,8 @@ export const places: Place[] = [
     address: "Via della Penna 22, 00186 Roma",
     lat: 41.9097086,
     lng: 12.474692,
-      image: "https://www.hotellocarno.com/media/2007/hotel-locarno-roma-terrazza-locarno.jpg",
-      imageAlt: "Rooftop terrace at Hotel Locarno near Piazza del Popolo",
+    image: "https://www.hotellocarno.com/media/2007/hotel-locarno-roma-terrazza-locarno.jpg",
+    imageAlt: "Rooftop terrace at Hotel Locarno near Piazza del Popolo",
     shortDescription: "A classic hotel terrace near Piazza del Popolo.",
     details:
       "A good aperitivo choice before or after the Spanish Steps, Piazza del Popolo, or Villa Borghese edge.",
@@ -740,8 +730,8 @@ export const places: Place[] = [
     address: "Piazza di San Marcello 5, 00187 Roma",
     lat: 41.8975849,
     lng: 12.4830183,
-      image: "https://cdn2.indagare.com/i/35452/w1200",
-      imageAlt: "Notos rooftop terrace at the Six Senses Rome",
+    image: "https://cdn2.indagare.com/i/35452/w1200",
+    imageAlt: "Notos rooftop terrace at the Six Senses Rome",
     shortDescription: "The Six Senses Rome rooftop on the fifth floor, just off Via del Corso.",
     details:
       "Use it for a smarter aperitivo or sunset drink between Trevi and Piazza Venezia; herb-filled terrace, hotel-grade service, central views.",
@@ -759,8 +749,8 @@ export const places: Place[] = [
     address: "Via Sistina 69, 00187 Roma",
     lat: 41.9054117,
     lng: 12.4859427,
-      image: "https://www.therooftopguide.com/rooftop-bars-in-rome/Bilder/cielo-terrace-600-1.jpg",
-      imageAlt: "Cielo Terrace at golden hour above Via Sistina",
+    image: "https://www.therooftopguide.com/rooftop-bars-in-rome/Bilder/cielo-terrace-600-1.jpg",
+    imageAlt: "Cielo Terrace at golden hour above Via Sistina",
     shortDescription: "Hotel de la Ville's two-level rooftop above the Spanish Steps.",
     details:
       "Sixth-floor cocktail bar and seventh-floor restaurant above the Spanish Steps — works as a sunset drink, a longer dinner, or both stacked.",
@@ -778,8 +768,9 @@ export const places: Place[] = [
     address: "Via Panisperna 233, 00184 Roma",
     lat: 41.8967562,
     lng: 12.4905381,
-      image: "https://cdn.prod.website-files.com/65f98c3a9204e23805036d66/69c4f9f93603964355ef2221_Casa-MontiRooftop.webp",
-      imageAlt: "Casa Monti rooftop terrace lounge",
+    image:
+      "https://cdn.prod.website-files.com/65f98c3a9204e23805036d66/69c4f9f93603964355ef2221_Casa-MontiRooftop.webp",
+    imageAlt: "Casa Monti rooftop terrace lounge",
     shortDescription: "A discreet Monti hotel rooftop tucked above Via Panisperna.",
     details:
       "An easy fit when the evening is already in Monti — quieter than the big-name terraces and close to Suburra and the Forum side.",
@@ -796,8 +787,9 @@ export const places: Place[] = [
     address: "Piazza Augusto Imperatore 10, 00186 Roma",
     lat: 41.9069831,
     lng: 12.4768772,
-      image: "https://www.bulgarihotels.com/.imaging/bhr-standard-small-jpg/dam/ROMA/Dining/LaTerrazza/bvlgari-hotel-roma-la-terrazza.jpg/jcr%3Acontent",
-      imageAlt: "La Terrazza pergolas at the Bulgari Hotel Roma",
+    image:
+      "https://www.bulgarihotels.com/.imaging/bhr-standard-small-jpg/dam/ROMA/Dining/LaTerrazza/bvlgari-hotel-roma-la-terrazza.jpg/jcr%3Acontent",
+    imageAlt: "La Terrazza pergolas at the Bulgari Hotel Roma",
     shortDescription: "The Bvlgari Hotel terrace looking onto the Mausoleum of Augustus.",
     details:
       "Dressier than most: panoramic views over the Mausoleum of Augustus, the Pantheon, and the dome of St. Peter's — worth booking ahead for sunset.",
@@ -814,8 +806,8 @@ export const places: Place[] = [
     address: "Via di Santa Maria dell'Anima 30, 00186 Roma",
     lat: 41.8993417,
     lng: 12.4724419,
-      image: "https://www.eitchborromini.com/data/1366/39.jpg",
-      imageAlt: "Terrazza Borromini above Piazza Navona",
+    image: "https://www.eitchborromini.com/data/1366/39.jpg",
+    imageAlt: "Terrazza Borromini above Piazza Navona",
     shortDescription: "A fourth-floor terrace at Eitch Borromini directly above Piazza Navona.",
     details:
       "The point of going is the angle on Piazza Navona itself — Sant'Agnese's dome at eye level, Borromini's bell towers right there. Best at sunset.",
@@ -832,8 +824,9 @@ export const places: Place[] = [
     address: "Via di Santa Chiara 4/A, 00186 Roma",
     lat: 41.8983116,
     lng: 12.4767108,
-      image: "https://www.thepantheonhotel.com/new/wp-content/uploads/2025/09/AK_ROMPA_Bar_Terrace_Pantheon_View.jpg",
-      imageAlt: "Divinity Rooftop bar terrace with a direct view of the Pantheon",
+    image:
+      "https://www.thepantheonhotel.com/new/wp-content/uploads/2025/09/AK_ROMPA_Bar_Terrace_Pantheon_View.jpg",
+    imageAlt: "Divinity Rooftop bar terrace with a direct view of the Pantheon",
     shortDescription: "A Pantheon-facing rooftop at The Pantheon Iconic Rome Hotel.",
     details:
       "Sixth-floor lounge bar with a direct view of the Pantheon's dome — go for the drink and the angle, not the food first.",
@@ -850,8 +843,8 @@ export const places: Place[] = [
     address: "Piazza della Minerva 69, 00186 Roma",
     lat: 41.8983729,
     lng: 12.4779284,
-      image: "https://i0.wp.com/rumemagazine.com/wp-content/uploads/2025/06/Gigi-Rigolatto-Rome-.jpg",
-      imageAlt: "Gigi Rigolatto rooftop dining at twilight",
+    image: "https://i0.wp.com/rumemagazine.com/wp-content/uploads/2025/06/Gigi-Rigolatto-Rome-.jpg",
+    imageAlt: "Gigi Rigolatto rooftop dining at twilight",
     shortDescription: "Orient Express La Minerva's seventh-floor Riviera-style rooftop.",
     details:
       "The Paris Society / RIKAS rooftop on top of Palazzo Fonseca — 360 views over the Pantheon, Vittoriano, and St. Peter's, with a polished bar-and-dinner room.",
@@ -869,8 +862,8 @@ export const places: Place[] = [
     address: "Via Giuseppe Zanardelli 23, 00186 Roma",
     lat: 41.9011247,
     lng: 12.4720351,
-      image: "https://www.anticadimoracinquelune.it/public/Terrazza%205%20Lune/Terrazza-5Lune-2.jpg",
-      imageAlt: "Terrazza delle Cinque Lune rooftop bistrot with Rome rooftops",
+    image: "https://www.anticadimoracinquelune.it/public/Terrazza%205%20Lune/Terrazza-5Lune-2.jpg",
+    imageAlt: "Terrazza delle Cinque Lune rooftop bistrot with Rome rooftops",
     shortDescription: "A rooftop bistrot near Piazza Navona at Antica Dimora delle Cinque Lune.",
     details:
       "Smaller and lower-key than the big-name terraces, with a wide sweep from the Pantheon to the Vatican — good for an aperitivo on the Navona side.",
@@ -887,9 +880,11 @@ export const places: Place[] = [
     address: "Via di Pietra 89/A, 00186 Roma",
     lat: 41.8995023,
     lng: 12.4795712,
-      image: "https://hapi.mmcreation.com/hapidam/26e09827-7521-4ae7-8650-4a34adbf6d0c/9hotel-cesari-nouvelles-photos-rooftop-006.jpg?w=960&h=960&mode=ratio&coi=50%2C50",
-      imageAlt: "Rooftop terrace of the 9 Hotel Cesari near the Pantheon",
-    shortDescription: "A 400 sqm terrace above 9Hotel Cesàri, between Piazza di Pietra and Sant'Ignazio.",
+    image:
+      "https://hapi.mmcreation.com/hapidam/26e09827-7521-4ae7-8650-4a34adbf6d0c/9hotel-cesari-nouvelles-photos-rooftop-006.jpg?w=960&h=960&mode=ratio&coi=50%2C50",
+    imageAlt: "Rooftop terrace of the 9 Hotel Cesari near the Pantheon",
+    shortDescription:
+      "A 400 sqm terrace above 9Hotel Cesàri, between Piazza di Pietra and Sant'Ignazio.",
     details:
       "Two levels: the lower side looks onto Piazza di Pietra and the Temple of Hadrian, the upper one frames Sant'Ignazio's facade. Open through the day, not just at night.",
     hours: "Usually open noon to midnight; check live hours before going.",
@@ -905,8 +900,9 @@ export const places: Place[] = [
     address: "Via della Fontanella di Borghese 48, 00186 Roma",
     lat: 41.9059431,
     lng: 12.4789518,
-      image: "https://cms.azumirestaurants.com/storage/zuma/restaurant/masthead/Zuma-Rome-Masthead--429728.jpg",
-      imageAlt: "Zuma Rome rooftop dining room at dusk",
+    image:
+      "https://cms.azumirestaurants.com/storage/zuma/restaurant/masthead/Zuma-Rome-Masthead--429728.jpg",
+    imageAlt: "Zuma Rome rooftop dining room at dusk",
     shortDescription: "Rainer Becker's izakaya on the top two floors of Palazzo Fendi.",
     details:
       "Fourth-floor Japanese izakaya, fifth-floor bar-and-lounge terrace — go for cocktails and the Condotti-side view rather than a quiet local pause.",
@@ -924,9 +920,10 @@ export const places: Place[] = [
     address: "Via di Ripetta 231, 00186 Roma",
     lat: 41.9086194,
     lng: 12.476351,
-      image: "https://euakl5xd.cdn.imgeng.in/assets/uploads/Dining/EtereRooftop/002_DSC_2589.jpg",
-      imageAlt: "Etere rooftop terrace at Palazzo Ripetta with Rome skyline",
-    shortDescription: "Palazzo Ripetta's fourth-floor terrace between Piazza del Popolo and the Ara Pacis.",
+    image: "https://euakl5xd.cdn.imgeng.in/assets/uploads/Dining/EtereRooftop/002_DSC_2589.jpg",
+    imageAlt: "Etere rooftop terrace at Palazzo Ripetta with Rome skyline",
+    shortDescription:
+      "Palazzo Ripetta's fourth-floor terrace between Piazza del Popolo and the Ara Pacis.",
     details:
       "A quieter Relais & Châteaux rooftop on the Tridente side — works for aperitivo after Piazza del Popolo, the Ara Pacis, or a Tiber-side walk.",
     hours: "Check live hours before going.",
@@ -942,7 +939,8 @@ export const places: Place[] = [
     address: "Via delle Quattro Fontane 13, 00184 Roma",
     lat: 41.9034733,
     lng: 12.4901355,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Palazzo_Barberini_-_esterno.jpg/1280px-Palazzo_Barberini_-_esterno.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Palazzo_Barberini_-_esterno.jpg/1280px-Palazzo_Barberini_-_esterno.jpg",
     imageAlt: "Facade of Palazzo Barberini",
     shortDescription: "Baroque palace, national galleries, and major painting rooms.",
     details:
@@ -960,7 +958,8 @@ export const places: Place[] = [
     address: "Piazza di Sant'Ignazio, 00186 Roma",
     lat: 41.8993411,
     lng: 12.4796897,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Triumph_of_St._Ignatius_of_Loyola%2C_ceiling_fresco_by_Andrea_Pozzo.jpg/1280px-Triumph_of_St._Ignatius_of_Loyola%2C_ceiling_fresco_by_Andrea_Pozzo.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Triumph_of_St._Ignatius_of_Loyola%2C_ceiling_fresco_by_Andrea_Pozzo.jpg/1280px-Triumph_of_St._Ignatius_of_Loyola%2C_ceiling_fresco_by_Andrea_Pozzo.jpg",
     imageAlt: "Andrea Pozzo's trompe-l'oeil ceiling at Sant'Ignazio",
     shortDescription: "The Sant'Ignazio interior and illusionistic ceiling moment.",
     details:
@@ -1013,7 +1012,8 @@ export const places: Place[] = [
     address: "Villa Borghese, Roma",
     lat: 41.9144111,
     lng: 12.4848439,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Ingresso_monumentale_di_Villa_Borghese_a_Roma_su_piazzale_Flaminio_2018-02.jpg/1280px-Ingresso_monumentale_di_Villa_Borghese_a_Roma_su_piazzale_Flaminio_2018-02.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Ingresso_monumentale_di_Villa_Borghese_a_Roma_su_piazzale_Flaminio_2018-02.jpg/1280px-Ingresso_monumentale_di_Villa_Borghese_a_Roma_su_piazzale_Flaminio_2018-02.jpg",
     imageAlt: "Monumental entrance to Villa Borghese gardens",
     shortDescription: "Rome's great central park for a long, generous walk.",
     details:
@@ -1030,7 +1030,8 @@ export const places: Place[] = [
     address: "Via di Porta Castello, 00193 Roma",
     lat: 41.903273,
     lng: 12.4581334,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Passetto_di_Borgo_from_Castel_Sant%27Angelo_01.jpg/1280px-Passetto_di_Borgo_from_Castel_Sant%27Angelo_01.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Passetto_di_Borgo_from_Castel_Sant%27Angelo_01.jpg/1280px-Passetto_di_Borgo_from_Castel_Sant%27Angelo_01.jpg",
     imageAlt: "The Passetto di Borgo fortified corridor",
     shortDescription: "The fortified corridor between the Vatican and Castel Sant'Angelo.",
     details:
@@ -1047,7 +1048,8 @@ export const places: Place[] = [
     address: "Piazza Pietro d'Illiria, 00153 Roma",
     lat: 41.8849257,
     lng: 12.480451,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Giardino_degli_Aranci.JPG/1280px-Giardino_degli_Aranci.JPG",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Giardino_degli_Aranci.JPG/1280px-Giardino_degli_Aranci.JPG",
     imageAlt: "The Giardino degli Aranci on the Aventine",
     shortDescription: "Aventine garden with one of the classic Rome views.",
     details:
@@ -1082,7 +1084,8 @@ export const places: Place[] = [
     address: "Parco degli Acquedotti, Roma",
     lat: 41.8448385,
     lng: 12.5623742,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Parco_degli_Acquedotti_Roma.jpg/1280px-Parco_degli_Acquedotti_Roma.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Parco_degli_Acquedotti_Roma.jpg/1280px-Parco_degli_Acquedotti_Roma.jpg",
     imageAlt: "Ancient aqueducts in Parco degli Acquedotti",
     shortDescription: "A wide open park crossed by ancient aqueducts.",
     details:
@@ -1099,7 +1102,8 @@ export const places: Place[] = [
     address: "Corso del Rinascimento 40, 00186 Roma",
     lat: 41.8954,
     lng: 12.4738,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/RomaSIvoSapienzaCupola.jpg/1280px-RomaSIvoSapienzaCupola.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/RomaSIvoSapienzaCupola.jpg/1280px-RomaSIvoSapienzaCupola.jpg",
     imageAlt: "Borromini's spiral lantern crowning the dome of Sant'Ivo alla Sapienza",
     shortDescription: "Borromini's mathematical masterpiece tucked inside a university courtyard.",
     details:
@@ -1116,7 +1120,8 @@ export const places: Place[] = [
     address: "Piazza di Sant'Apollinare 46, 00186 Roma",
     lat: 41.9013,
     lng: 12.4729,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Roma_2011_08_07_Palazzo_Altemps.jpg/1280px-Roma_2011_08_07_Palazzo_Altemps.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Roma_2011_08_07_Palazzo_Altemps.jpg/1280px-Roma_2011_08_07_Palazzo_Altemps.jpg",
     imageAlt: "Courtyard of Palazzo Altemps",
     shortDescription: "Renaissance palazzo holding the Ludovisi sculpture collection.",
     details:
@@ -1134,9 +1139,11 @@ export const places: Place[] = [
     address: "Via degli Astalli 16, 00186 Roma",
     lat: 41.8961,
     lng: 12.4799,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chiesa_del_Ges%C3%B9_September_2015-7a.jpg/1280px-Chiesa_del_Ges%C3%B9_September_2015-7a.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chiesa_del_Ges%C3%B9_September_2015-7a.jpg/1280px-Chiesa_del_Ges%C3%B9_September_2015-7a.jpg",
     imageAlt: "Baciccio's Triumph of the Name of Jesus ceiling fresco at Il Gesù",
-    shortDescription: "Mother church of the Jesuits with one of Rome's great illusionistic ceilings.",
+    shortDescription:
+      "Mother church of the Jesuits with one of Rome's great illusionistic ceilings.",
     details:
       "Look up: Baciccio's Triumph of the Name of Jesus pours out of the ceiling. The Sant'Ignazio side chapel mechanism uncovers the silver statue daily around 17:30.",
     hours: "Generally 07:30-12:30 and 16:00-19:45; check daily.",
@@ -1152,9 +1159,11 @@ export const places: Place[] = [
     address: "Via del Plebiscito 118, 00186 Roma",
     lat: 41.8961,
     lng: 12.4822,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Palazzo_Venezia_cortile_del_Palazzetto_1050323.JPG/1280px-Palazzo_Venezia_cortile_del_Palazzetto_1050323.JPG",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Palazzo_Venezia_cortile_del_Palazzetto_1050323.JPG/1280px-Palazzo_Venezia_cortile_del_Palazzetto_1050323.JPG",
     imageAlt: "The Palazzetto Venezia inner garden-courtyard",
-    shortDescription: "The hidden cloister-garden inside Palazzo Venezia, two steps from Piazza Venezia.",
+    shortDescription:
+      "The hidden cloister-garden inside Palazzo Venezia, two steps from Piazza Venezia.",
     details:
       "Few people know this exists. A small, formal renaissance garden — perfect quiet pause between the Capitoline, the Forum, and the Corso.",
     hours: "Access through the museum; Tuesday-Sunday, generally 09:00-19:00.",
@@ -1170,12 +1179,14 @@ export const places: Place[] = [
     address: "Piazza della Minerva 42, 00186 Roma",
     lat: 41.8983,
     lng: 12.4779,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Santa_Maria_sopra_Minerva_%28Rom%29%2C_Kreuzgang.JPG/1280px-Santa_Maria_sopra_Minerva_%28Rom%29%2C_Kreuzgang.JPG",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Santa_Maria_sopra_Minerva_%28Rom%29%2C_Kreuzgang.JPG/1280px-Santa_Maria_sopra_Minerva_%28Rom%29%2C_Kreuzgang.JPG",
     imageAlt: "Cloister of Santa Maria sopra Minerva",
     shortDescription: "The Dominican convent cloister behind Santa Maria sopra Minerva.",
     details:
       "A quiet rectangle of arches behind the only Gothic church in central Rome. Pair with the church itself (Michelangelo's Christ, Bernini's elephant out front).",
-    hours: "Access varies; sometimes through the convent or during exhibitions. Check before visiting.",
+    hours:
+      "Access varies; sometimes through the convent or during exhibitions. Check before visiting.",
   },
   {
     slug: "san-luigi-dei-francesi",
@@ -1187,7 +1198,8 @@ export const places: Place[] = [
     address: "Piazza di San Luigi de' Francesi, 00186 Roma",
     lat: 41.8995,
     lng: 12.4744,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/%C3%89glise_San_Luigi_Francesi_-_Rome_%28IT62%29_-_2021-08-28_-_2.jpg/1280px-%C3%89glise_San_Luigi_Francesi_-_Rome_%28IT62%29_-_2021-08-28_-_2.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/%C3%89glise_San_Luigi_Francesi_-_Rome_%28IT62%29_-_2021-08-28_-_2.jpg/1280px-%C3%89glise_San_Luigi_Francesi_-_Rome_%28IT62%29_-_2021-08-28_-_2.jpg",
     imageAlt: "Facade of San Luigi dei Francesi",
     shortDescription: "Three Caravaggios in the Contarelli Chapel, free of charge.",
     details:
@@ -1204,7 +1216,8 @@ export const places: Place[] = [
     address: "Piazza del Popolo 12, 00187 Roma",
     lat: 41.9111,
     lng: 12.4761,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/20140803_Basilica_of_Santa_Maria_del_Popolo_Rome_0191.jpg/1280px-20140803_Basilica_of_Santa_Maria_del_Popolo_Rome_0191.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/20140803_Basilica_of_Santa_Maria_del_Popolo_Rome_0191.jpg/1280px-20140803_Basilica_of_Santa_Maria_del_Popolo_Rome_0191.jpg",
     imageAlt: "Basilica of Santa Maria del Popolo",
     shortDescription: "Two Caravaggios, a Raphael chapel, and Bernini all in one church.",
     details:
@@ -1221,9 +1234,11 @@ export const places: Place[] = [
     address: "Piazza di Sant'Agostino 80, 00186 Roma",
     lat: 41.9007,
     lng: 12.4736,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Sant%27_Agostino_-_esterno.jpg/1280px-Sant%27_Agostino_-_esterno.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Sant%27_Agostino_-_esterno.jpg/1280px-Sant%27_Agostino_-_esterno.jpg",
     imageAlt: "Facade of the Basilica di Sant'Agostino",
-    shortDescription: "Caravaggio's Madonna of the Pilgrims and a Sansovino Madonna at the entrance.",
+    shortDescription:
+      "Caravaggio's Madonna of the Pilgrims and a Sansovino Madonna at the entrance.",
     details:
       "A short walk from Piazza Navona; less crowded than San Luigi dei Francesi and worth pairing with it.",
     hours: "Generally 07:30-12:00 and 16:00-19:30.",
@@ -1236,9 +1251,10 @@ export const places: Place[] = [
     kind: "Basilica",
     neighborhood: "Pigna",
     address: "Piazza della Minerva 42, 00186 Roma",
-    lat: 41.8980,
+    lat: 41.898,
     lng: 12.4781,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Santa_Maria_sopra_Minerva.jpg/1280px-Santa_Maria_sopra_Minerva.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Santa_Maria_sopra_Minerva.jpg/1280px-Santa_Maria_sopra_Minerva.jpg",
     imageAlt: "Bernini's elephant in front of Santa Maria sopra Minerva",
     shortDescription: "Rome's only Gothic church interior, with Michelangelo's Risen Christ.",
     details:
@@ -1255,9 +1271,11 @@ export const places: Place[] = [
     address: "Via Labicana 95, 00184 Roma",
     lat: 41.8895,
     lng: 12.4977,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg/1280px-Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg/1280px-Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg",
     imageAlt: "Facade of the Basilica di San Clemente",
-    shortDescription: "Three layers of Rome: 12th-c. church on a 4th-c. church on a Mithraic temple.",
+    shortDescription:
+      "Three layers of Rome: 12th-c. church on a 4th-c. church on a Mithraic temple.",
     details:
       "Top level is free; the underground archaeological levels need a ticket and are the real reason to go. Five minutes from the Colosseum, almost empty by comparison.",
     hours: "Monday-Saturday 10:00-12:30 and 15:00-18:00; Sunday afternoons.",
@@ -1273,7 +1291,8 @@ export const places: Place[] = [
     address: "Piazza di San Pietro in Vincoli 4/a, 00184 Roma",
     lat: 41.8939,
     lng: 12.4933,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Michelangelo_-_Moses_-_San_Pietro_in_Vincoli-11.jpg/1280px-Michelangelo_-_Moses_-_San_Pietro_in_Vincoli-11.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Michelangelo_-_Moses_-_San_Pietro_in_Vincoli-11.jpg/1280px-Michelangelo_-_Moses_-_San_Pietro_in_Vincoli-11.jpg",
     imageAlt: "Michelangelo's Moses at San Pietro in Vincoli",
     shortDescription: "Michelangelo's Moses, the chains of Saint Peter, no queue.",
     details:
@@ -1290,7 +1309,8 @@ export const places: Place[] = [
     address: "Piazza di Santa Maria in Trastevere, 00153 Roma",
     lat: 41.8893,
     lng: 12.4694,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/01_Santa_Maria_in_Trastevere_Facade.jpg/1280px-01_Santa_Maria_in_Trastevere_Facade.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/01_Santa_Maria_in_Trastevere_Facade.jpg/1280px-01_Santa_Maria_in_Trastevere_Facade.jpg",
     imageAlt: "Facade of Santa Maria in Trastevere",
     shortDescription: "One of Rome's oldest churches, with 12th-century mosaics inside and out.",
     details:
@@ -1307,7 +1327,8 @@ export const places: Place[] = [
     address: "Piazza Pietro d'Illiria 1, 00153 Roma",
     lat: 41.8845,
     lng: 12.4798,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Santa_Sabina_%28Rome%29_-_Esterno.jpg/1280px-Santa_Sabina_%28Rome%29_-_Esterno.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Santa_Sabina_%28Rome%29_-_Esterno.jpg/1280px-Santa_Sabina_%28Rome%29_-_Esterno.jpg",
     imageAlt: "Basilica of Santa Sabina on the Aventine",
     shortDescription: "A 5th-century basilica, austere and luminous, on the Aventine.",
     details:
@@ -1324,7 +1345,8 @@ export const places: Place[] = [
     address: "Via del Corso 305, 00186 Roma",
     lat: 41.8985,
     lng: 12.4811,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Palazzo_Doria_Pamphilj.jpg/1280px-Palazzo_Doria_Pamphilj.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Palazzo_Doria_Pamphilj.jpg/1280px-Palazzo_Doria_Pamphilj.jpg",
     imageAlt: "Facade of Palazzo Doria Pamphilj",
     shortDescription: "Velázquez's Innocent X, two Caravaggios, and a Gallery of Mirrors.",
     details:
@@ -1340,11 +1362,13 @@ export const places: Place[] = [
     kind: "Private gallery",
     neighborhood: "Trevi",
     address: "Piazza SS. Apostoli 66, 00187 Roma",
-    lat: 41.8990,
+    lat: 41.899,
     lng: 12.4836,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Galleria_di_palazzo_colonna%2C_02.JPG/1280px-Galleria_di_palazzo_colonna%2C_02.JPG",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Galleria_di_palazzo_colonna%2C_02.JPG/1280px-Galleria_di_palazzo_colonna%2C_02.JPG",
     imageAlt: "The frescoed Great Hall interior of Galleria Colonna",
-    shortDescription: "Saturday-only gallery with a Great Hall longer than Versailles' Hall of Mirrors.",
+    shortDescription:
+      "Saturday-only gallery with a Great Hall longer than Versailles' Hall of Mirrors.",
     details:
       "Open Saturday mornings only (and the first Saturday of the month is free). Stand on the cannonball lodged in the marble step — left from a 1849 siege.",
     hours: "Saturday 09:00-13:15 (last entry 12:15); occasionally Friday evenings.",
@@ -1360,9 +1384,11 @@ export const places: Place[] = [
     address: "Via della Pilotta 17, 00187 Roma",
     lat: 41.8989,
     lng: 12.4849,
-    image: image.garden,
-    imageAlt: "Palazzo Colonna gardens on the Quirinal slope",
-    shortDescription: "Terraced private gardens climbing the Quirinal, linked to the palazzo by four arches over Via della Pilotta.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/7/70/Palazzo_colonna%2C_giardino_verso_santi_apostoli_06.JPG",
+    imageAlt: "Garden terraces of Palazzo Colonna looking toward Santi Apostoli",
+    shortDescription:
+      "Terraced private gardens climbing the Quirinal, linked to the palazzo by four arches over Via della Pilotta.",
     details:
       "Same Saturday-morning window as the gallery — the gardens are included in the full ticket and sit on the Quirinal slope behind the palazzo. The four pedestrian arches over Via della Pilotta are the giveaway from street level.",
     hours: "Saturday 09:00-13:15 with the Galleria Colonna visit; private tours otherwise.",
@@ -1378,7 +1404,8 @@ export const places: Place[] = [
     address: "Piazza Capo di Ferro 13, 00186 Roma",
     lat: 41.8943,
     lng: 12.4716,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Palazzo_Spada_-_Rome%2C_Italy_-_DSC09752.jpg/1280px-Palazzo_Spada_-_Rome%2C_Italy_-_DSC09752.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Palazzo_Spada_-_Rome%2C_Italy_-_DSC09752.jpg/1280px-Palazzo_Spada_-_Rome%2C_Italy_-_DSC09752.jpg",
     imageAlt: "Borromini's forced-perspective colonnade at Palazzo Spada",
     shortDescription: "Borromini's optical-illusion colonnade and a four-room cardinal's gallery.",
     details:
@@ -1396,7 +1423,8 @@ export const places: Place[] = [
     address: "Via della Lungara 230, 00165 Roma",
     lat: 41.8932,
     lng: 12.4665,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/La_villa_Farnesina_%28Rome%29_%2834029492720%29.jpg/1280px-La_villa_Farnesina_%28Rome%29_%2834029492720%29.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/La_villa_Farnesina_%28Rome%29_%2834029492720%29.jpg/1280px-La_villa_Farnesina_%28Rome%29_%2834029492720%29.jpg",
     imageAlt: "Villa Farnesina in Trastevere",
     shortDescription: "Raphael's Galatea and the Loggia of Cupid and Psyche, on the Tiber.",
     details:
@@ -1414,7 +1442,8 @@ export const places: Place[] = [
     address: "Via di Valle Murcia 6, 00153 Roma",
     lat: 41.8843,
     lng: 12.4823,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/RomaRosetoComunale01.JPG/1280px-RomaRosetoComunale01.JPG",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/RomaRosetoComunale01.JPG/1280px-RomaRosetoComunale01.JPG",
     imageAlt: "Roses in bloom at the Roseto Comunale",
     shortDescription: "Over 1,100 varieties of roses on the slope above the Circus Maximus.",
     details:
@@ -1431,7 +1460,8 @@ export const places: Place[] = [
     address: "Via Calandrelli 35, 00153 Roma",
     lat: 41.8857,
     lng: 12.4665,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/VillaSciarra.JPG/1280px-VillaSciarra.JPG",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/VillaSciarra.JPG/1280px-VillaSciarra.JPG",
     imageAlt: "Statues and pathways in Villa Sciarra",
     shortDescription: "An overgrown romantic park above Trastevere — almost no tourists.",
     details:
@@ -1448,7 +1478,8 @@ export const places: Place[] = [
     address: "Via di San Pancrazio, 00152 Roma",
     lat: 41.8852,
     lng: 12.4554,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Villa_Doria_Pamphilj_in_Rom.jpg/1280px-Villa_Doria_Pamphilj_in_Rom.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Villa_Doria_Pamphilj_in_Rom.jpg/1280px-Villa_Doria_Pamphilj_in_Rom.jpg",
     imageAlt: "Pine alleys of Villa Doria Pamphilj",
     shortDescription: "Rome's biggest public park — pine alleys, lakes, and very few tourists.",
     details:
@@ -1482,7 +1513,8 @@ export const places: Place[] = [
     address: "Piazza Mincio, 00198 Roma",
     lat: 41.9221,
     lng: 12.5012,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Quartiere_Copped%C3%A9_09.jpg/1280px-Quartiere_Copped%C3%A9_09.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Quartiere_Copped%C3%A9_09.jpg/1280px-Quartiere_Copped%C3%A9_09.jpg",
     imageAlt: "Art Nouveau detail in Quartiere Coppede",
     shortDescription: "A pocket of fairytale Art Nouveau hidden in a residential district.",
     details:
@@ -1499,7 +1531,8 @@ export const places: Place[] = [
     address: "Piazza dei Cavalieri di Malta 4, 00153 Roma",
     lat: 41.8838,
     lng: 12.4779,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Knights_of_Malta_Keyhole%2C_Aventine_Hill%2C_Rome_%28cropped%29.jpg/1280px-Knights_of_Malta_Keyhole%2C_Aventine_Hill%2C_Rome_%28cropped%29.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Knights_of_Malta_Keyhole%2C_Aventine_Hill%2C_Rome_%28cropped%29.jpg/1280px-Knights_of_Malta_Keyhole%2C_Aventine_Hill%2C_Rome_%28cropped%29.jpg",
     imageAlt: "View of St. Peter's dome through the Aventine Keyhole",
     shortDescription: "Through a keyhole on the Aventine, a perfect framed view of St. Peter's.",
     details:
@@ -1516,9 +1549,11 @@ export const places: Place[] = [
     address: "Piazza dell'Oratorio, 00187 Roma",
     lat: 41.8993,
     lng: 12.4824,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Galleria_Sciarra.jpg/1280px-Galleria_Sciarra.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Galleria_Sciarra.jpg/1280px-Galleria_Sciarra.jpg",
     imageAlt: "The frescoed Art Nouveau atrium of Galleria Sciarra",
-    shortDescription: "A free-to-walk-through covered courtyard with Liberty-style frescoes near Trevi.",
+    shortDescription:
+      "A free-to-walk-through covered courtyard with Liberty-style frescoes near Trevi.",
     details:
       "Office building, but open to the public on weekdays. Sixty seconds off the Trevi axis and almost nobody knows it.",
     hours: "Weekdays during office hours; closed weekends.",
@@ -1533,7 +1568,8 @@ export const places: Place[] = [
     address: "Via Vittorio Veneto 27, 00187 Roma",
     lat: 41.9054,
     lng: 12.4877,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Rom%2C_Santa_Maria_Immacolata_a_Via_Veneto%2C_Krypta_der_Kapuziner_1.jpg/1280px-Rom%2C_Santa_Maria_Immacolata_a_Via_Veneto%2C_Krypta_der_Kapuziner_1.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Rom%2C_Santa_Maria_Immacolata_a_Via_Veneto%2C_Krypta_der_Kapuziner_1.jpg/1280px-Rom%2C_Santa_Maria_Immacolata_a_Via_Veneto%2C_Krypta_der_Kapuziner_1.jpg",
     imageAlt: "Bone-decorated chamber of the Capuchin Crypt",
     shortDescription: "Six small chapels decorated entirely with the bones of 4,000 friars.",
     details:
@@ -1551,8 +1587,10 @@ export const places: Place[] = [
     address: "Via Ostiense 106, 00154 Roma",
     lat: 41.8689,
     lng: 12.4794,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Centrale_Montemartini_08.jpg/1280px-Centrale_Montemartini_08.jpg",
-    imageAlt: "Roman marble statues among the original power plant machinery at Centrale Montemartini",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Centrale_Montemartini_08.jpg/1280px-Centrale_Montemartini_08.jpg",
+    imageAlt:
+      "Roman marble statues among the original power plant machinery at Centrale Montemartini",
     shortDescription: "Classical sculpture displayed inside a decommissioned power plant.",
     details:
       "Off-branch of the Capitoline Museums. Half an hour by metro from the centre, and the contrast between marble gods and turbines is the whole point.",
@@ -1572,7 +1610,8 @@ export const places: Place[] = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Santa_Maria_Maggiore_-_facciata.jpg/1280px-Santa_Maria_Maggiore_-_facciata.jpg",
     imageAlt: "Facade of the Basilica di Santa Maria Maggiore",
-    shortDescription: "One of Rome's four papal basilicas, with fifth-century mosaics over the nave.",
+    shortDescription:
+      "One of Rome's four papal basilicas, with fifth-century mosaics over the nave.",
     details:
       "The anchor of the Esquilino side: 5th-century mosaics along the nave and triumphal arch, a Bernini tomb, and the relic of the Holy Crib. Easy to pair with Monti or a Termini-side arrival.",
     hours: "Generally open daily 07:00-18:45; check official hours before going.",
@@ -1588,9 +1627,11 @@ export const places: Place[] = [
     address: "Via di Sant'Ignazio 52, 00186 Roma",
     lat: 41.8985,
     lng: 12.4795,
-    image: image.museum,
-    imageAlt: "Frescoed reading hall of an old Roman library",
-    shortDescription: "An 18th-century Dominican library with a free-to-visit Salone Monumentale near the Pantheon.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/1/15/Biblioteca-Casanatense-Roma-Salone-01.jpg",
+    imageAlt: "Salone Monumentale of the Biblioteca Casanatense",
+    shortDescription:
+      "An 18th-century Dominican library with a free-to-visit Salone Monumentale near the Pantheon.",
     details:
       "Founded in 1701 by Cardinal Casanate. The trick is the weekday late-morning window: the monumental hall is open without a guided tour Monday-Friday, 11:30 to 13:00. Two minutes from Sant'Ignazio.",
     hours: "Salone Monumentale Mon-Fri 11:30-13:00; library reading rooms have separate hours.",
@@ -1606,9 +1647,11 @@ export const places: Place[] = [
     address: "Cortile del Belvedere, 00120 Città del Vaticano",
     lat: 41.9043,
     lng: 12.4544,
-    image: image.museum,
-    imageAlt: "Reading room inside the Vatican Apostolic Library",
-    shortDescription: "The papal library inside the Vatican — access restricted to qualified researchers.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d4/12090_-_The_Sistine_Hall_of_the_Vatican_Library_%283481636305%29.jpg",
+    imageAlt: "Sistine Hall of the Biblioteca Apostolica Vaticana",
+    shortDescription:
+      "The papal library inside the Vatican — access restricted to qualified researchers.",
     details:
       "Not a walk-in: entry requires academic credentials, a reference letter, and ID left at the Sant'Anna gate. Worth knowing it exists; for a casual visitor, the easier substitute is the Casanatense.",
     hours: "Mon-Fri 09:00-17:00 for accredited readers; tours rare.",
@@ -1624,8 +1667,9 @@ export const places: Place[] = [
     address: "Piazzale Giuseppe Garibaldi, 00165 Roma",
     lat: 41.8917,
     lng: 12.4628,
-    image: image.rome,
-    imageAlt: "View over Rome from the Janiculum hill",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/Gianicolo_%28Rome%29_in_2018.07.jpg",
+    imageAlt: "Rome rooftops and domes from the Terrazza del Gianicolo",
     shortDescription: "The Janiculum terrace above Trastevere — the long sweep over Rome's center.",
     details:
       "The classic late-afternoon walk: up from Trastevere or down from Villa Doria Pamphilj, with the noon cannon at the parapet and a busts-of-Garibaldini avenue along the way.",
@@ -1641,9 +1685,11 @@ export const places: Place[] = [
     address: "Via Matteo Boiardo 16, 00185 Roma",
     lat: 41.8861,
     lng: 12.5067,
-    image: image.museum,
-    imageAlt: "Nazarene frescoes inside the Casino Massimo Lancellotti",
-    shortDescription: "A 1605 villa near San Giovanni in Laterano, with Nazarene frescoes from Dante, Ariosto, and Tasso.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/f/fb/Roma_-_Villa_Giustiniani_Massimo_-_2025-10-12_16-07-29_001.jpg",
+    imageAlt: "Facade and loggia of Villa Giustiniani Massimo",
+    shortDescription:
+      "A 1605 villa near San Giovanni in Laterano, with Nazarene frescoes from Dante, Ariosto, and Tasso.",
     details:
       "The casino (Casino Massimo Lancellotti) is the part worth chasing — three frescoed rooms by the Nazarene painters dedicated to Dante's Commedia, Ariosto, and Tasso. Now owned by the Custody of the Holy Land; visits are by appointment.",
     hours: "By appointment only; check Custodia di Terra Santa for current openings.",
@@ -1695,8 +1741,9 @@ export const places: Place[] = [
     address: "Via Nomentana 70, 00161 Roma",
     lat: 41.9197,
     lng: 12.5113,
-    image: image.garden,
-    imageAlt: "The Casina delle Civette stained-glass house in Villa Torlonia",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/8/8e/Roma%2C_Villa_Torlonia_-_pronao_del_Casino_nobile_1.JPG",
+    imageAlt: "Pronaos of the Casino Nobile at Villa Torlonia",
     shortDescription: "A 19th-century park with three small museums and Mussolini's old residence.",
     details:
       "The park is free. The Casina delle Civette is the one to chase — a Liberty-style house with Cambellotti stained glass. Casino Nobile adds the Mussolini bunker tour. Easy to combine with Quartiere Coppedè a few minutes north.",
@@ -1730,10 +1777,11 @@ export const places: Place[] = [
     neighborhood: "Ponte",
     address: "Piazza Sforza Cesarini 40, 00186 Roma",
     lat: 41.8985,
-    lng: 12.4690,
-    image: image.trattoria,
-    imageAlt: "A Roman trattoria table on a piazza",
-    shortDescription: "A classic trattoria on a quiet piazza off Corso Vittorio, with outdoor tables.",
+    lng: 12.469,
+    image: "https://www.trattoriapolese.com/static/immagini/contenuti/piazetta_1770648287.jpg",
+    imageAlt: "Trattoria Polese terrace on Piazza Sforza Cesarini",
+    shortDescription:
+      "A classic trattoria on a quiet piazza off Corso Vittorio, with outdoor tables.",
     details:
       "Old-school Roman service: fettuccine, saltimbocca, abbacchio. Best for the piazza terrace in warm months between Campo de' Fiori and Castel Sant'Angelo.",
     hours: "Check live hours before going.",
@@ -1749,8 +1797,8 @@ export const places: Place[] = [
     address: "Via dei Crociferi 25, 00187 Roma",
     lat: 41.9011,
     lng: 12.4833,
-    image: image.trattoria,
-    imageAlt: "An Italian table set with Roman dishes",
+    image: "https://www.agrodolceroma.it/wp-content/uploads/2022/10/9.jpg",
+    imageAlt: "Dining room of Agrodolce near Trevi",
     shortDescription: "Roman classics with a Sorrento accent, two minutes from the Trevi Fountain.",
     details:
       "Useful when the route is glued to Trevi and you want sit-down food without the tourist menu — Roman staples plus Neapolitan/Amalfi influence from the owner's family.",
@@ -1767,8 +1815,9 @@ export const places: Place[] = [
     address: "Via dei Santi Quattro 66, 00184 Roma",
     lat: 41.8893,
     lng: 12.4954,
-    image: image.trattoria,
-    imageAlt: "Roman pasta on a trattoria table",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/21/cd/10/antica-trattoria-pasqualino.jpg",
+    imageAlt: "Antica Trattoria Pasqualino al Colosseo storefront",
     shortDescription: "A 1956 trattoria five minutes from the Colosseum, on the Celio side.",
     details:
       "Better than most Colosseum-adjacent options — actual Romans go for the cacio e pepe and abbacchio. Easy to slot in after a Forum/Colosseum morning.",
@@ -1785,8 +1834,9 @@ export const places: Place[] = [
     address: "Via Tor di Nona 23, 00186 Roma",
     lat: 41.9012,
     lng: 12.4694,
-    image: image.trattoria,
-    imageAlt: "Roman pasta on a trattoria counter",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/11/6e/05/trattoria-lilli.jpg",
+    imageAlt: "Interior of Trattoria Lilli",
     shortDescription: "A small family trattoria on a Tiber-side street near Piazza Navona.",
     details:
       "Cash-leaning, no fuss, Roman menu. Useful as a no-tourist-menu fallback on the Navona/Castel Sant'Angelo axis.",
@@ -1803,9 +1853,11 @@ export const places: Place[] = [
     address: "Via della Lungaretta 86, 00153 Roma",
     lat: 41.8893,
     lng: 12.4707,
-    image: image.wine,
-    imageAlt: "Wine glasses and Roman small plates",
-    shortDescription: "Trastevere wine bar with pasta and small plates, near Santa Maria in Trastevere.",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/77/fa/ae/catalana-di-gamberi.jpg",
+    imageAlt: "Catalana di gamberi at Enoteca Trastevere",
+    shortDescription:
+      "Trastevere wine bar with pasta and small plates, near Santa Maria in Trastevere.",
     details:
       "A central Trastevere stop for wine plus a quick plate of pasta or cured meats — fits before or after a Santa Maria in Trastevere visit.",
     hours: "Daily 12:00-00:00.",
@@ -1821,8 +1873,9 @@ export const places: Place[] = [
     address: "Via Mastro Giorgio 29, 00153 Roma",
     lat: 41.8784,
     lng: 12.4759,
-    image: image.trattoria,
-    imageAlt: "Cacio e pepe being tossed tableside",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/aa/93/14/tonnarelli-cacio-e-pepe.jpg",
+    imageAlt: "Tonnarelli cacio e pepe at Felice a Testaccio",
     shortDescription: "A 1936 Testaccio institution, famous for tableside-tossed cacio e pepe.",
     details:
       "Book ahead — this is the one for cacio e pepe and Roman classics. Pair with a Testaccio market morning or a Pyramid-of-Cestius / Protestant Cemetery walk.",
@@ -1839,8 +1892,8 @@ export const places: Place[] = [
     address: "Via della Penna 68, 00186 Roma",
     lat: 41.9089,
     lng: 12.4751,
-    image: image.trattoria,
-    imageAlt: "A Roman osteria table with pasta and wine",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/7f/52/5c/osteria-st-ana.jpg",
+    imageAlt: "Dining room at Osteria St. Ana",
     shortDescription: "A small osteria near Piazza del Popolo for Roman pasta and grilled meats.",
     details:
       "Tucked just behind Piazza del Popolo on the Tridente side — useful for a sit-down dinner when the day is around Villa Borghese, Ara Pacis, or the river.",
@@ -1857,8 +1910,9 @@ export const places: Place[] = [
     address: "Via di Pietra 88, 00186 Roma",
     lat: 41.8997,
     lng: 12.4795,
-    image: image.trattoria,
-    imageAlt: "A Roman dish on a side-street table",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/5d/b8/01/antica-osteria-di-pietra.jpg",
+    imageAlt: "Entrance of Antica Osteria di Pietra",
     shortDescription: "A small osteria on Via di Pietra, steps from the Temple of Hadrian.",
     details:
       "Right on the Piazza di Pietra side of the Pantheon — a convenient sit-down option when central plans drift between the Pantheon and Trevi.",
@@ -1873,9 +1927,10 @@ export const places: Place[] = [
     neighborhood: "Testaccio",
     address: "Via di Monte Testaccio 97, 00153 Roma",
     lat: 41.8754,
-    lng: 12.4760,
-    image: image.trattoria,
-    imageAlt: "Carbonara and Roman pasta on a wooden table",
+    lng: 12.476,
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/e4/d7/81/flavio-al-velavevodetto.jpg",
+    imageAlt: "Dining room at Flavio al Velavevodetto in Testaccio",
     shortDescription: "A Testaccio trattoria built into the side of Monte dei Cocci.",
     details:
       "Roman classics — carbonara, gricia, polpette al sugo. The dining rooms cut into the amphora-shard hill are the gimmick worth experiencing once.",
@@ -1892,8 +1947,8 @@ export const places: Place[] = [
     address: "Via Benedetta 23, 00153 Roma",
     lat: 41.8923,
     lng: 12.4677,
-    image: image.pizza,
-    imageAlt: "Thin Roman pizza on a wooden board",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/74/75/83/l-elementare.jpg",
+    imageAlt: "Pizza at L'Elementare Trastevere",
     shortDescription: "A Trastevere pizzeria pushing a refined, thin-crust Roman pizza.",
     details:
       "Thin, crisp Roman pizza with careful toppings — the move when you want pizza but not the Ivo-style classic. A few minutes from Santa Maria in Trastevere.",
@@ -1910,9 +1965,11 @@ export const places: Place[] = [
     address: "Via Tor de' Schiavi 53A, 00172 Roma",
     lat: 41.8868,
     lng: 12.5494,
-    image: image.pizza,
-    imageAlt: "Roman-style pizza al taglio",
-    shortDescription: "Jacopo Mercuro's project for the renaissance of Roman pizza, out in Centocelle.",
+    image:
+      "https://180gpizzeriaromana.com/wp-content/uploads/2025/10/180grammi-pizzeria-romana-jacopo-mercuri-2-e1761294631433.jpg",
+    imageAlt: "Pizzaiolo Jacopo Mercuri at 180g Pizzeria Romana",
+    shortDescription:
+      "Jacopo Mercuro's project for the renaissance of Roman pizza, out in Centocelle.",
     details:
       "Worth the metro trip — one of the most-talked-about Roman pizzas in Rome. Drives a 50 Top Pizza-tier menu in an unfashionable east-side neighborhood.",
     hours: "Check live hours before going.",
@@ -1928,8 +1985,8 @@ export const places: Place[] = [
     address: "Via del Governo Vecchio 76, 00186 Roma",
     lat: 41.8989,
     lng: 12.4694,
-    image: image.trattoria,
-    imageAlt: "A Roman pasta dish on a wooden table",
+    image: "https://www.mastrociccia.com/storage/2025/02/DSC07648-Enhanced-NR-scaled.jpg",
+    imageAlt: "Roman pizza from the oven at Mastrociccia",
     shortDescription: "All-day osteria and pizzeria a stone's throw from Piazza Navona.",
     details:
       "Long hours (open through the afternoon), Roman menu plus pizza — handy when you want food at off-peak times in the Navona/Pasquino loop.",
@@ -1946,8 +2003,8 @@ export const places: Place[] = [
     address: "Via di San Francesco a Ripa 158, 00153 Roma",
     lat: 41.8869,
     lng: 12.4717,
-    image: image.pizza,
-    imageAlt: "A Roman thin-crust pizza on a table",
+    image: "https://ivoatrastevere.it/wp-content/uploads/2026/01/ivo-trastevere-esterno.webp",
+    imageAlt: "Pizzeria Ivo a Trastevere storefront at dusk",
     shortDescription: "A 1962 Trastevere pizzeria — the textbook Roman thin-crust spot.",
     details:
       "Cash-leaning, no reservations (under 10), bustling. The shape of a classic Trastevere pizza dinner: house wine, bruschetta, supplì, then pizza.",
@@ -1964,8 +2021,9 @@ export const places: Place[] = [
     address: "Via Angelo Bargoni 10, 00153 Roma",
     lat: 41.8829,
     lng: 12.4687,
-    image: image.pizza,
-    imageAlt: "Creative Roman pizza with refined toppings",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/77/f1/4e/pizza-capricciosa-fantastica.jpg?w=1200",
+    imageAlt: "Pizza with prosciutto and grated egg yolk at Seu Pizza Illuminati",
     shortDescription: "Pier Daniele Seu's much-booked project for elevated Roman pizza.",
     details:
       "Halfway between Roman and Neapolitan dough, with seasonal, chef-y toppings. Book well in advance — one of the harder tables in Rome.",
@@ -1980,9 +2038,10 @@ export const places: Place[] = [
     neighborhood: "Trastevere",
     address: "Via dei Genovesi 37, 00153 Roma",
     lat: 41.8889,
-    lng: 12.4720,
-    image: image.trattoria,
-    imageAlt: "Seafood pasta on a Trastevere table",
+    lng: 12.472,
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/e9/08/ac/img-20190414-215553-largejpg.jpg?w=1200",
+    imageAlt: "Linguine with lobster at Le Mani in Pasta",
     shortDescription: "A reservation-only Trastevere osteria for fresh pasta and seafood.",
     details:
       "Always full — book a few days ahead. Roman classics plus seafood pastas, in a small room a few minutes from Piazza Mastai.",
@@ -1998,8 +2057,9 @@ export const places: Place[] = [
     address: "Via del Falco 19, 00193 Roma",
     lat: 41.9039,
     lng: 12.4609,
-    image: image.trattoria,
-    imageAlt: "Plates of fresh seafood on a Roman table",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/b1/86/8c/da-benito-e-gilberto.jpg?w=1200",
+    imageAlt: "Raw seafood platter at Da Benito e Gilberto",
     shortDescription: "A family-run Borgo seafood spot a stone's throw from the Vatican walls.",
     details:
       "Closer-to-50-year-old fish trattoria — sea urchins, oysters, simple Roman seafood plates. Useful for dinner after a Vatican Museums or Castel Sant'Angelo day.",
@@ -2015,8 +2075,8 @@ export const places: Place[] = [
     address: "Via di San Francesco a Ripa 12, 00153 Roma",
     lat: 41.8889,
     lng: 12.4731,
-    image: image.trattoria,
-    imageAlt: "Fresh fish dish on a Roman table",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/3e/83/6a/coccio.jpg?w=1200",
+    imageAlt: "Chef with fresh fish at Ripa 12",
     shortDescription: "Since 1991, a Colao-family seafood address in Trastevere.",
     details:
       "Crudités, raw bar, and fish-driven Roman cooking — a more grown-up Trastevere dinner option than the pizza-and-supplì circuit.",
@@ -2033,8 +2093,9 @@ export const places: Place[] = [
     address: "Viale Aurelio Saffi 7, 00153 Roma",
     lat: 41.8856,
     lng: 12.4663,
-    image: image.trattoria,
-    imageAlt: "Sicilian fish couscous on a plate",
+    image:
+      "https://lirp.cdn-website.com/8a83b4dc/dms3rep/multi/opt/MRS_3225-3864ce50-9d633409-1920w.jpg",
+    imageAlt: "Fresh fish display at Mare Nostrum Seafood",
     shortDescription: "A small Sicilian-rooted seafood spot at the edge of Trastevere.",
     details:
       "Tagliolini Mare Nostrum, Sicilian-style tuna, fish couscous trapanese — book ahead, only thirty seats.",
@@ -2051,8 +2112,8 @@ export const places: Place[] = [
     address: "Vicolo Scanderbeg 112, 00187 Roma",
     lat: 41.9008,
     lng: 12.4838,
-    image: image.trattoria,
-    imageAlt: "Roman pasta in a small trattoria",
+    image: "https://www.piccoloarancio.it/wp-content/uploads/2024/05/IMG_6544-2-min.jpg",
+    imageAlt: "Pasta plated with oranges at Piccolo Arancio",
     shortDescription: "A historic Roman trattoria three minutes from the Trevi Fountain.",
     details:
       "Tight side street off the Trevi axis — pasta-leaning Roman menu with a softer modern touch, useful when the day is parked at Trevi/Quirinale.",
@@ -2069,8 +2130,8 @@ export const places: Place[] = [
     address: "Via degli Zingari 49, 00184 Roma",
     lat: 41.8946,
     lng: 12.4928,
-    image: image.trattoria,
-    imageAlt: "A modern Monti restaurant interior",
+    image: "https://static.wixstatic.com/media/84d3a5_b778dc51f57a4862a71ff13030376bfa~mv2.jpg",
+    imageAlt: "Cocktail on the bar at Kon'forme in Monti",
     shortDescription: "A Monti cafe-restaurant on Via degli Zingari for daytime-to-evening eats.",
     details:
       "Useful in Monti for an in-between meal — coffee, lunch, aperitivo — without committing to a full trattoria sit-down.",
@@ -2086,9 +2147,10 @@ export const places: Place[] = [
     address: "Via Federico Cesi 1, 00193 Roma",
     lat: 41.9078,
     lng: 12.4729,
-    image: image.gelato,
-    imageAlt: "Scoops of organic gelato",
-    shortDescription: "Organic Prati gelato with biodynamic milk — pistachio and gianduja are the hits.",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/78/db/e6/photo1jpg.jpg",
+    imageAlt: "Gelato and macarons counter at Neve di Latte Prati",
+    shortDescription:
+      "Organic Prati gelato with biodynamic milk — pistachio and gianduja are the hits.",
     details:
       "Quieter and cleaner-flavored than the famous-name gelaterie. A good Prati or Piazza Cavour stop before walking back across the river.",
     hours: "Sun-Thu 11:00-23:00; Fri-Sat 11:00-00:00.",
@@ -2103,9 +2165,10 @@ export const places: Place[] = [
     address: "Via della Croce 82, 00187 Roma",
     lat: 41.9069,
     lng: 12.4805,
-    image: image.gelato,
-    imageAlt: "Tiramisu portion in a takeaway tray",
-    shortDescription: "The Roman tiramisu chain everyone fights over — classic, pistachio, strawberry.",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/28/4e/50/pompi.jpg",
+    imageAlt: "Counter inside Pompi on Via della Croce",
+    shortDescription:
+      "The Roman tiramisu chain everyone fights over — classic, pistachio, strawberry.",
     details:
       "Five-minute walk from the Spanish Steps. Takeaway-only portions in plastic trays — easy as a moving sweet stop, not a sit-down.",
     hours: "Daily 10:00-22:30.",
@@ -2121,8 +2184,8 @@ export const places: Place[] = [
     address: "Via Ettore Rolli 50, 00153 Roma",
     lat: 41.8794,
     lng: 12.4691,
-    image: image.bakery,
-    imageAlt: "Maritozzo cream bun on a paper plate",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/57/1d/5f/photo0jpg.jpg",
+    imageAlt: "Owner handing a maritozzo across the bar at Il Maritozzaro",
     shortDescription: "A late-night Trastevere bar dedicated to the maritozzo con la panna.",
     details:
       "The hardcore version: maritozzi served late, traditionally as a post-club fix. Off the tourist Trastevere path, near Trastevere station.",
@@ -2138,8 +2201,9 @@ export const places: Place[] = [
     address: "Viale di Trastevere 255, 00153 Roma",
     lat: 41.8814,
     lng: 12.4708,
-    image: image.gelato,
-    imageAlt: "Gelato scoops on a cone",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/b4/82/87/cono-mango-e-fichi.jpg",
+    imageAlt: "Branded Giuffrè gelato cone",
     shortDescription: "A Trastevere-station gelateria with a fruit-forward, natural style.",
     details:
       "Easy to chain into a Trastevere or Gianicolo afternoon. Also bakes — good for pizza al taglio between scoops.",
@@ -2156,8 +2220,9 @@ export const places: Place[] = [
     address: "Via del Pellegrino 87, 00186 Roma",
     lat: 41.8966,
     lng: 12.4716,
-    image: image.coffee,
-    imageAlt: "Specialty coffee on a cafe counter",
+    image:
+      "https://cdn.prod.website-files.com/642ddb32d98b362f43d39c8b/653e37a6ae6bc593446194ca_pac_optimized.jpg",
+    imageAlt: "Pain au chocolat at Barnum Roma",
     shortDescription: "A specialty coffee, brunch, and laptop-friendly cafe near Campo de' Fiori.",
     details:
       "Better-than-bar espresso, breakfast plates, and wifi — works as a calmer alternative to the espresso-counter routine in the heart of the Centro Storico.",
@@ -2174,8 +2239,8 @@ export const places: Place[] = [
     address: "Via del Boschetto 132, 00184 Roma",
     lat: 41.8951,
     lng: 12.4906,
-    image: image.coffee,
-    imageAlt: "Espresso and pastries on a Roman bar counter",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/10/04/af/16-cappuccini.jpg",
+    imageAlt: "Cappuccino latte art at Er Baretto",
     shortDescription: "A small Monti espresso bar with a cult tiramisu and pistachio cornetto.",
     details:
       "On Via del Boschetto, the calmer Monti axis. Open from breakfast through evening — useful as both a quick coffee stop and a sweet detour.",
@@ -2191,8 +2256,8 @@ export const places: Place[] = [
     address: "Via del Falco 37/38, 00193 Roma",
     lat: 41.9039,
     lng: 12.4605,
-    image: image.cocktail,
-    imageAlt: "A vinyl record turntable in a candlelit bar",
+    image: "https://le-strade.com/wp-content/uploads/2025/04/33-GIRI_5.jpg",
+    imageAlt: "Bar counter with vinyl shelves at 33 Giri",
     shortDescription: "A vinyl-driven listening bar a few minutes from the Vatican walls.",
     details:
       "Records play through a proper sound system, not as background. Small plates and short cocktail list — Tuesday-Sunday only, reservation required.",
@@ -2207,14 +2272,15 @@ export const places: Place[] = [
     neighborhood: "Trevi",
     address: "Piazza di San Marcello 4, 00187 Roma",
     lat: 41.8975,
-    lng: 12.4830,
-    image: image.cocktail,
-    imageAlt: "A cocktail bar in a Roman palazzo",
+    lng: 12.483,
+    image: "https://img.edilportale.com/news/wb_SixSenses-Hotel-Roma-0486-96187_3.jpg",
+    imageAlt: "Bivium's marble bar and courtyard at Six Senses Rome",
     shortDescription: "Six Senses Rome's ground-floor cafe-bar-restaurant inside Palazzo Salviati.",
     details:
       "The street-level half of the Six Senses pair with Notos on the roof. Good for a polished aperitivo or an open-kitchen Italian meal in a 15th-century palazzo.",
     hours: "Check live hours before going.",
-    website: "https://www.sixsenses.com/en/hotels-resorts/europe/italy/rome/dining/bivium-restaurant-cafe-bar/",
+    website:
+      "https://www.sixsenses.com/en/hotels-resorts/europe/italy/rome/dining/bivium-restaurant-cafe-bar/",
     recommendedBy: ["Apoline's reco"],
   },
   {
@@ -2227,8 +2293,9 @@ export const places: Place[] = [
     address: "Arco della Pace 5, 00186 Roma",
     lat: 41.8993,
     lng: 12.4716,
-    image: image.museum,
-    imageAlt: "Bramante's cloister at Santa Maria della Pace",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/01_Santa_Maria_della_Pace_Facade.jpg/1280px-01_Santa_Maria_della_Pace_Facade.jpg",
+    imageAlt: "Baroque facade of Santa Maria della Pace",
     shortDescription: "A small church near Piazza Navona with Bramante's first Roman cloister.",
     details:
       "Two reasons to come: Raphael's Sibyls inside the church, and Bramante's geometric cloister next door (now an exhibition hall with a free coffee bar on the upper loggia).",
@@ -2245,9 +2312,11 @@ export const places: Place[] = [
     address: "Mercato di Testaccio Box 66, Via Beniamino Franklin 12/E, 00153 Roma",
     lat: 41.8769,
     lng: 12.4757,
-    image: image.trattoria,
-    imageAlt: "Suppli and fried snacks at a Testaccio market stall",
-    shortDescription: "Box 66 in the Testaccio market — supplì, fried artichokes, and Roman fritti.",
+    image:
+      "https://www.mercatoditestaccio.it/cms/wp-content/uploads/2016/09/food-box-3-800x800.jpg",
+    imageAlt: "Food Box stall at Mercato di Testaccio Box 66",
+    shortDescription:
+      "Box 66 in the Testaccio market — supplì, fried artichokes, and Roman fritti.",
     details:
       "Stall, not a restaurant. Go at market hours, order at the counter, eat standing. Pair with Mordi e Vai a few stalls over for a proper Testaccio market lunch.",
     hours: "Mon-Sat 07:00-15:30; closed Sunday.",
@@ -2262,9 +2331,11 @@ export const places: Place[] = [
     address: "Mercato di Testaccio Box 15, Via Beniamino Franklin 12/E, 00153 Roma",
     lat: 41.8769,
     lng: 12.4756,
-    image: image.trattoria,
-    imageAlt: "A Roman sandwich stuffed with slow-cooked beef and chicory",
-    shortDescription: "Sergio Esposito's market stall — the allesso di scottona sandwich is the order.",
+    image:
+      "https://www.mercatoditestaccio.it/cms/wp-content/uploads/2016/09/mordi-e-vai-1-800x800.jpg",
+    imageAlt: "Sergio Esposito at the Mordi e Vai stall in Mercato di Testaccio",
+    shortDescription:
+      "Sergio Esposito's market stall — the allesso di scottona sandwich is the order.",
     details:
       "Box 15 in the Testaccio market, yellow sign in the northwest corner. The slow-cooked beef with chicory in a roll is the signature; lines move fast.",
     hours: "Mon-Sat 08:00-14:30; closed Sunday.",
@@ -2279,9 +2350,11 @@ export const places: Place[] = [
     address: "Mercato di Testaccio Box 7, Via Beniamino Franklin 12/E, 00153 Roma",
     lat: 41.8769,
     lng: 12.4758,
-    image: image.wine,
-    imageAlt: "Bulk wine taps at a Roman market stall",
-    shortDescription: "Box 7 in the Testaccio market — bulk wine on tap and small-producer pantry goods.",
+    image:
+      "https://www.mercatoditestaccio.it/cms/wp-content/uploads/2016/09/vini-sfusi-e-alla-spina-15-800x800.jpg",
+    imageAlt: "Vinarius wine stall at Mercato di Testaccio Box 7",
+    shortDescription:
+      "Box 7 in the Testaccio market — bulk wine on tap and small-producer pantry goods.",
     details:
       "Bring your own bottle for the spina, or pick from bottled selections and Calabrian preserves, honey, balsamic, and oil. Pair the stop with Mordi e Vai and Food Box for a full-market loop.",
     hours: "Mon-Sat market hours; closed Sunday.",
@@ -2296,8 +2369,9 @@ export const places: Place[] = [
     address: "Piazzale Caffarelli 4, 00186 Roma",
     lat: 41.8929,
     lng: 12.4823,
-    image: image.coffee,
-    imageAlt: "Roman rooftop terrace above the Capitoline",
+    image:
+      "https://www.terrazzacaffarelli.it/images/phocagallery/terrazza/thumbs/phoca_thumb_l_terrazza_2.jpg",
+    imageAlt: "Rooftop dining room at Terrazza Caffarelli over the domes of Rome",
     shortDescription: "The Capitoline Museums' rooftop cafe with a sweeping view over the city.",
     details:
       "Accessible without a museum ticket via the Campidoglio steps. Espresso, light lunch, aperitivo — the trick is that you get the panoramic view as a casual cafe, not a hotel rooftop.",
@@ -2317,7 +2391,8 @@ export const places: Place[] = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Church_of_Cosmas_and_Damian%2C_apse_mosaic_in_the_Roman_Forum.jpg/1280px-Church_of_Cosmas_and_Damian%2C_apse_mosaic_in_the_Roman_Forum.jpg",
     imageAlt: "The 6th-century apse mosaic at Santi Cosma e Damiano with Christ on a sunset cloud",
-    shortDescription: "A basilica on the edge of the Forum with one of Rome's great early Christian mosaics.",
+    shortDescription:
+      "A basilica on the edge of the Forum with one of Rome's great early Christian mosaics.",
     details:
       "Built into a hall of the Forum of Peace and Temple of Romulus. Two reasons to come: the 6th-century apse mosaic (Christ on a deep blue-and-sunset sky) and the large 18th-century Neapolitan presepio in a side room.",
     hours: "Daily, generally 10:00-13:00 and 15:00-19:00; presepio room may have separate hours.",
@@ -2365,14 +2440,13 @@ export const places: Place[] = [
     slug: "suppli-roma",
     category: "restaurants",
     title: "Supplì",
-    marker: "SR",
+    marker: "SO",
     kind: "Street food / friggitoria",
     neighborhood: "Trastevere",
     address: "Via di San Francesco a Ripa 137, 00153 Roma",
-    lat: 41.8870,
+    lat: 41.887,
     lng: 12.4717,
-    image:
-      "https://i0.wp.com/www.suppliroma.it/wp-content/uploads/2017/03/home-descrizione.jpg",
+    image: "https://i0.wp.com/www.suppliroma.it/wp-content/uploads/2017/03/home-descrizione.jpg",
     imageAlt: "Fried suppli on the counter at La Casa dei Supplì",
     shortDescription: "The Trastevere takeaway nicknamed La Casa dei Supplì, open since 1979.",
     details:
@@ -2390,8 +2464,7 @@ export const places: Place[] = [
     address: "Vicolo del Bologna 45/46, 00153 Roma",
     lat: 41.8907,
     lng: 12.4683,
-    image:
-      "https://www.darpoeta.com/wp-content/uploads/2024/05/DSCF5918-1024x1536.jpg",
+    image: "https://www.darpoeta.com/wp-content/uploads/2024/05/DSCF5918-1024x1536.jpg",
     imageAlt: "Dar Poeta pizzeria interior in a 1600s Trastevere stable",
     shortDescription: "A 1995 Trastevere pizzeria with a slow-rise dough and a wood oven.",
     details:
@@ -2409,8 +2482,7 @@ export const places: Place[] = [
     address: "Via del Pellegrino 11, 00186 Roma",
     lat: 41.8954,
     lng: 12.4709,
-    image:
-      "https://www.osteriadafortunata.it/wp-content/uploads/2022/08/homepage-1.png",
+    image: "https://www.osteriadafortunata.it/wp-content/uploads/2022/08/homepage-1.png",
     imageAlt: "Pasta-makers rolling fresh dough in the window of Osteria Da Fortunata",
     shortDescription: "Fresh pasta rolled in the window — no reservations, queue early.",
     details:
@@ -2426,10 +2498,9 @@ export const places: Place[] = [
     kind: "Tiramisu shop",
     neighborhood: "Parione",
     address: "Via del Governo Vecchio 88, 00186 Roma",
-    lat: 41.8980,
+    lat: 41.898,
     lng: 12.4708,
-    image:
-      "https://img3.restaurantguru.com/w550/h367/rb9f-interior-Two-Sizes-2024-12.jpg",
+    image: "https://img3.restaurantguru.com/w550/h367/rb9f-interior-Two-Sizes-2024-12.jpg",
     imageAlt: "Two Sizes Tiramisu shop counter near Piazza Navona",
     shortDescription: "Cup-sized tiramisu in five flavours, a short walk from Piazza Navona.",
     details:
@@ -2465,8 +2536,7 @@ export const places: Place[] = [
     address: "Via della Lungaretta 96, 00153 Roma",
     lat: 41.8888,
     lng: 12.4724,
-    image:
-      "https://fiordiluna.com/wp-content/uploads/2024/06/20141001-_DSC5020.jpg",
+    image: "https://fiordiluna.com/wp-content/uploads/2024/06/20141001-_DSC5020.jpg",
     imageAlt: "Gelato tubs at Fior di Luna in Trastevere",
     shortDescription: "A small, all-natural gelato counter on Via della Lungaretta.",
     details:
@@ -2484,8 +2554,9 @@ export const places: Place[] = [
     address: "Piazza del Popolo 1, 00187 Roma",
     lat: 41.9098786,
     lng: 12.476139,
-    image: image.trattoria,
-    imageAlt: "Terrace at Dal Bolognese on Piazza del Popolo",
+    image:
+      "https://roma.dalbolognese.it/cms/wp-content/uploads/2018/07/ristorante-allaperto-roma-piazza-del-popolo.jpg",
+    imageAlt: "Dal Bolognese outdoor terrace on Piazza del Popolo",
     shortDescription: "A see-and-be-seen Roman classic on Piazza del Popolo.",
     details:
       "Emilia-Roman pasta and polished service on one of the city's grandest piazze — best when you want a proper central dinner with a terrace mood.",
@@ -2503,8 +2574,8 @@ export const places: Place[] = [
     address: "Via Germanico 58-60, 00192 Roma",
     lat: 41.907733,
     lng: 12.4574373,
-    image: image.trattoria,
-    imageAlt: "Dining room at Dal Toscano near the Vatican",
+    image: "https://www.ristorantedaltoscano.it/wp-content/uploads/2019/10/TSC_051.jpg",
+    imageAlt: "Steak grilling over open flame at Dal Toscano",
     shortDescription: "A Prati steakhouse built around Chianina beef and a serious wine list.",
     details:
       "Good when the group wants red meat rather than another pasta trattoria — handy between Prati, the Vatican, and Castel Sant'Angelo.",
@@ -2522,8 +2593,9 @@ export const places: Place[] = [
     address: "Via del Corso 173, 00187 Roma",
     lat: 41.9027858,
     lng: 12.4797292,
-    image: image.coffee,
-    imageAlt: "Brunch plates at Ginger on Via del Corso",
+    image:
+      "https://gingerristoranti.com/wp-content/uploads/2023/06/ginger-corte-laica-roma-vl9-00003.jpg",
+    imageAlt: "Columned dining hall at Ginger Corte Laica",
     shortDescription: "The Corso branch of Rome's healthy cafe chain — juices, brunch, and salads.",
     details:
       "A lighter stop between Piazza del Popolo and the Spanish Steps when you want something fresh rather than another espresso bar.",
@@ -2541,8 +2613,8 @@ export const places: Place[] = [
     address: "Piazza di Sant'Eustachio 54, 00186 Roma",
     lat: 41.8983028,
     lng: 12.4757593,
-    image: image.coffee,
-    imageAlt: "Ginger cafe near the Pantheon",
+    image: "https://gingerristoranti.com/wp-content/uploads/2023/06/ginger-pantheon-1.jpg",
+    imageAlt: "Chandeliers and mural at Ginger Pantheon",
     shortDescription: "A bright healthy cafe a few steps from Sant'Eustachio and the Pantheon.",
     details:
       "Useful for breakfast or lunch between Piazza Navona, the Pantheon, and the Ghetto without committing to a full trattoria.",
@@ -2560,9 +2632,10 @@ export const places: Place[] = [
     address: "Via Borgognona 43-46, 00187 Roma",
     lat: 41.9042435,
     lng: 12.4795148,
-    image: image.coffee,
-    imageAlt: "Ginger Spagna near the Spanish Steps",
-    shortDescription: "The Spanish Steps Ginger — salads, juices, and a calmer lunch option in the luxury grid.",
+    image: "https://gingerristoranti.com/wp-content/uploads/2023/06/ginger-spagna-roma.jpg",
+    imageAlt: "Dining room under the skylight at Ginger Spagna",
+    shortDescription:
+      "The Spanish Steps Ginger — salads, juices, and a calmer lunch option in the luxury grid.",
     details:
       "Handy when shopping or museum-hopping around Spagna and you want something light before an evening reservation.",
     hours: "Check live hours before going.",
@@ -2579,8 +2652,8 @@ export const places: Place[] = [
     address: "Via di Gesù e Maria 18, 00187 Roma",
     lat: 41.9083454,
     lng: 12.47823,
-    image: image.trattoria,
-    imageAlt: "Hostaria Da Pietro near Trevi",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/97/3f/45/caption.jpg",
+    imageAlt: "Plated dish at Hostaria Da Pietro",
     shortDescription: "A small, old-school Roman hostaria tucked behind Trevi.",
     details:
       "Classic pasta and Roman mains in a tight room — a good central dinner when you want trattoria energy without the tourist-trap feel of the fountain square itself.",
@@ -2591,15 +2664,17 @@ export const places: Place[] = [
     slug: "hotel-de-russie",
     category: "bars",
     title: "Hotel de Russie",
-    marker: "RU",
+    marker: "HD",
     kind: "Hotel bar",
     neighborhood: "Tridente",
     address: "Via del Babuino 9, 00187 Roma",
     lat: 41.9099435,
     lng: 12.4774581,
-    image: image.cocktail,
-    imageAlt: "Stravinskij Bar garden at Hotel de Russie",
-    shortDescription: "Rocco Forte's hotel bar and secret garden between Spagna and Piazza del Popolo.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/Hotel_de_Russie_in_Rome_%281819-1822%29_-_GUESTS_P%C3%ABtr_Ilic_Ciaikovski_%281879%29%2C_Pablo_Picasso_with_Igor_Stravinsky_%281917%29._Here_died_Napoleone_Giuseppe_Carlo_Bonaparte_%28J%C3%A9r%C3%B4me%2C_Trieste_1822-Rome_1891%29%2C_Napoleon%27s_nephew._%2829113995990%29.jpg",
+    imageAlt: "Facade of Hotel de Russie on Via del Babuino",
+    shortDescription:
+      "Rocco Forte's hotel bar and secret garden between Spagna and Piazza del Popolo.",
     details:
       "The Stravinskij Bar and courtyard are the draw — polished cocktails and aperitivo in one of Rome's quiet luxury pockets.",
     hours: "Check live hours before going.",
@@ -2610,15 +2685,17 @@ export const places: Place[] = [
     slug: "la-casetta-a-monti",
     category: "cafes",
     title: "La Casetta a Monti",
-    marker: "CM",
+    marker: "LC",
     kind: "Cafe and bistro",
     neighborhood: "Monti",
     address: "Via della Madonna dei Monti 62, 00184 Roma",
     lat: 41.8942896,
     lng: 12.4901061,
-    image: image.coffee,
-    imageAlt: "La Casetta a Monti on a Monti side street",
-    shortDescription: "A small Monti cafe-bistro for coffee, brunch, and a slower neighborhood pause.",
+    image:
+      "https://images.squarespace-cdn.com/content/59b01095be42d610798454b4/1506200068687-D6KE7OMN6B8NO6PRJ8X3/IMG_9330.jpg?format=2500w",
+    imageAlt: "Ivy-covered facade of La Casetta a Monti",
+    shortDescription:
+      "A small Monti cafe-bistro for coffee, brunch, and a slower neighborhood pause.",
     details:
       "Feels like a local living room on a residential Monti street — good before or after the Colosseum edge without staying in the tourist core.",
     hours: "Check live hours before going.",
@@ -2628,14 +2705,14 @@ export const places: Place[] = [
     slug: "maccheroni",
     category: "restaurants",
     title: "Maccheroni",
-    marker: "MK",
+    marker: "MX",
     kind: "Pasta restaurant",
     neighborhood: "Pantheon",
     address: "Piazza delle Coppelle 44, 00186 Roma",
     lat: 41.9006117,
     lng: 12.4758715,
-    image: image.trattoria,
-    imageAlt: "Pasta at Maccheroni near the Pantheon",
+    image: "https://ristorantemaccheroni.com/wp-content/uploads/2020/08/interni1-edit-2.jpg",
+    imageAlt: "Vaulted interior of Maccheroni near the Pantheon",
     shortDescription: "A pasta-focused room between Piazza Navona and the Pantheon.",
     details:
       "Built around daily pasta specials and a compact Roman menu — a strong pick when the day is already around the centro storico.",
@@ -2647,14 +2724,13 @@ export const places: Place[] = [
     slug: "osteria-da-fortunata-cancelleria",
     category: "restaurants",
     title: "Osteria da Fortunata — Cancelleria",
-    marker: "FC",
+    marker: "O2",
     kind: "Pasta osteria",
     neighborhood: "Piazza della Cancelleria",
     address: "Piazza della Cancelleria 87, 00186 Roma",
     lat: 41.896218,
     lng: 12.472092,
-    image:
-      "https://www.osteriadafortunata.it/wp-content/uploads/2022/08/homepage-1.png",
+    image: "https://www.osteriadafortunata.it/wp-content/uploads/2022/08/homepage-1.png",
     imageAlt: "Fresh pasta at Osteria da Fortunata Cancelleria",
     shortDescription: "The Cancelleria branch — same window pasta show, different piazza.",
     details:
@@ -2673,8 +2749,8 @@ export const places: Place[] = [
     address: "Piazza de' Ricci 144, 00186 Roma",
     lat: 41.8967899,
     lng: 12.468655,
-    image: image.trattoria,
-    imageAlt: "Seafood service at Pierluigi on Piazza de' Ricci",
+    image: "https://www.pierluigi.it/wp-content/uploads/2019/07/Pierluigi-2-1500x630.jpg",
+    imageAlt: "Outdoor dining on Piazza de' Ricci at Pierluigi",
     shortDescription: "A long-running seafood institution on a small piazza near Campo de' Fiori.",
     details:
       "Crudo, pasta di mare, and a serious wine cellar — book ahead for a proper fish dinner when the group is done with carbonara.",
@@ -2693,8 +2769,8 @@ export const places: Place[] = [
     address: "Via d'Ascanio 26A, 00186 Roma",
     lat: 41.889053,
     lng: 12.4825134,
-    image: image.trattoria,
-    imageAlt: "Open kitchen at Retrobottega in Regola",
+    image: "https://live.staticflickr.com/65535/48095819858_4d2732c97f_h.jpg",
+    imageAlt: "Retrobottega entrance on Via d'Ascanio",
     shortDescription: "A contemporary Roman kitchen with an open pass and a short, sharp menu.",
     details:
       "More modern than the classic trattorie — good when you want technique and seasonality without leaving the centro storico.",
@@ -2712,8 +2788,8 @@ export const places: Place[] = [
     address: "Via Galvani 24a, 00153 Roma",
     lat: 41.8769911,
     lng: 12.475074,
-    image: image.trattoria,
-    imageAlt: "Dining room at Angelina in Testaccio",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/bb/05/e5/photo1jpg.jpg",
+    imageAlt: "Rooftop terrace at Angelina a Testaccio",
     shortDescription: "A relaxed Testaccio trattoria for classic Roman cooking.",
     details:
       "Younger, easy energy in the market quarter — carbonara, coda, and the kind of dinner that fits after a Testaccio walk or Monte dei Cocci.",
@@ -2731,9 +2807,10 @@ export const places: Place[] = [
     address: "Piazza di Pietra 42, 00186 Roma",
     lat: 41.900121,
     lng: 12.479312,
-    image: image.cocktail,
-    imageAlt: "Cocktails at Salotto42 on Piazza di Pietra",
-    shortDescription: "A cocktail bar on Piazza di Pietra for after-dinner drinks near the Pantheon.",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/29/05/e6/caption.jpg",
+    imageAlt: "Salotto 42 outdoor tables facing the Temple of Hadrian columns",
+    shortDescription:
+      "A cocktail bar on Piazza di Pietra for after-dinner drinks near the Pantheon.",
     details:
       "Small room, strong list, central address — use it when dinner is done and you want one more stop before walking home through the lit-up centro.",
     hours: "Check live hours before going.",
@@ -2744,14 +2821,15 @@ export const places: Place[] = [
     slug: "settimo-all-arancio",
     category: "restaurants",
     title: "Settimio all'Arancio",
-    marker: "SA",
+    marker: "ST",
     kind: "Roman trattoria",
     neighborhood: "Sant'Eustachio",
     address: "Via dell'Arancio 50, 00186 Roma",
     lat: 41.9044318,
     lng: 12.4775289,
-    image: image.trattoria,
-    imageAlt: "Settimio all'Arancio trattoria interior",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/26/e0/2c/settimio-all-arancio.jpg",
+    imageAlt: "Dining room at Settimio all'Arancio",
     shortDescription: "A no-frills Roman trattoria on Via dell'Arancio.",
     details:
       "Old-school pasta and secondi in a tight dining room — the kind of place Romans still treat as a neighborhood staple slightly off the main tourist drags.",
@@ -2769,9 +2847,10 @@ export const places: Place[] = [
     address: "Via della Paglia 1/2/3, 00153 Roma",
     lat: 41.889804,
     lng: 12.4693004,
-    image: image.trattoria,
-    imageAlt: "Busy dining room at Tonnarello in Trastevere",
-    shortDescription: "A loud, popular Trastevere trattoria known for tonnarelli and Roman classics.",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/37/06/e3/tonnarello.jpg",
+    imageAlt: "Carbonara and cacio e pepe at Tonnarello",
+    shortDescription:
+      "A loud, popular Trastevere trattoria known for tonnarelli and Roman classics.",
     details:
       "Expect a queue and a bustling room — go early if you hate waiting. Good anchor for a Trastevere evening when you want classic pasta in a high-energy setting.",
     hours: "Check live hours before going.",
@@ -2788,8 +2867,8 @@ export const places: Place[] = [
     address: "Piazza della Scala 19/21, 00153 Roma",
     lat: 41.8909113,
     lng: 12.4682918,
-    image: image.trattoria,
-    imageAlt: "Tonnarello Scala on Piazza della Scala",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/33/37/9a/3a/caption.jpg",
+    imageAlt: "Antipasti at Tonnarello Scala in Trastevere",
     shortDescription: "The second Tonnarello room on Piazza della Scala.",
     details:
       "Same Roman menu energy as the original on Via della Paglia — useful when the first location's wait is too long and you still want the same dishes.",
@@ -2807,8 +2886,8 @@ export const places: Place[] = [
     address: "Via Urbana 47, 00184 Roma",
     lat: 41.896033,
     lng: 12.493936,
-    image: image.trattoria,
-    imageAlt: "Brunch and dinner at Urbana 47 in Monti",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/0c/c5/ea/interesting.jpg",
+    imageAlt: "Urbana 47 bistro interior counter with preserve tins",
     shortDescription: "A Monti bistro for brunch, lunch, and dinner on Via Urbana.",
     details:
       "Relaxed all-day room in the Monti grid — handy near the Colosseum and Santa Maria Maggiore when you want something between cafe and full trattoria.",
@@ -2820,13 +2899,14 @@ export const places: Place[] = [
     slug: "spazio-sette-libreria",
     category: "shops",
     title: "Spazio Sette Libreria",
-    marker: "SS",
+    marker: "S7",
     kind: "Design bookshop",
     neighborhood: "Sant'Eustachio",
     address: "Via dei Barbieri 7, 00186 Roma",
     lat: 41.8951815,
     lng: 12.4755548,
-    image: "https://www.liminarivista.it/wp-content/uploads/2025/04/Spazio-Sette_sala-centrale_libreria-1585x1080.jpg",
+    image:
+      "https://www.liminarivista.it/wp-content/uploads/2025/04/Spazio-Sette_sala-centrale_libreria-1585x1080.jpg",
     imageAlt: "Central hall of Spazio Sette Libreria inside Palazzo Cavallerini Lazzaroni",
     shortDescription: "A bookshop inside a frescoed Renaissance palazzo near Largo Argentina.",
     details:
@@ -2835,6 +2915,326 @@ export const places: Place[] = [
     website: "https://www.instagram.com/spaziosette_libreria/",
     phone: "+39 06 6869747",
     recommendedBy: ["Apoline's reco"],
+  },
+  {
+    slug: "santa-prassede",
+    category: "culture",
+    title: "Santa Prassede",
+    marker: "PR",
+    kind: "Basilica",
+    neighborhood: "Esquilino",
+    address: "Via di Santa Prassede 9/a, 00184 Roma",
+    lat: 41.8966,
+    lng: 12.4995,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Roma_-_Santa_Prassede_-_Cappella_di_San_Zenone_-_Mosaico_-_2023-09-15_14-59-07_001.jpg/1280px-Roma_-_Santa_Prassede_-_Cappella_di_San_Zenone_-_Mosaico_-_2023-09-15_14-59-07_001.jpg",
+    imageAlt: "Golden mosaics in the Chapel of San Zeno at Santa Prassede",
+    shortDescription: "A small Esquilino basilica hiding some of Rome's finest Byzantine mosaics.",
+    details:
+      "The Chapel of San Zeno is the reason to go: ninth-century gold mosaics, intimate scale, and almost none of the crowd pressure of the major basilicas. Pair with Santa Maria Maggiore.",
+    hours: "Generally daily morning and late afternoon; check live hours before going.",
+  },
+  {
+    slug: "santi-quattro-coronati",
+    category: "culture",
+    title: "Santi Quattro Coronati",
+    marker: "Q4",
+    kind: "Fortified church and cloister",
+    neighborhood: "Celio",
+    address: "Via dei Santi Quattro 20, 00184 Roma",
+    lat: 41.8896,
+    lng: 12.4988,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Santi_Quattro_Coronati_Rome_cloister_2012.jpg/1280px-Santi_Quattro_Coronati_Rome_cloister_2012.jpg",
+    imageAlt: "Medieval cloister at Santi Quattro Coronati",
+    shortDescription:
+      "A fortified medieval church complex with a quiet cloister above the Colosseum.",
+    details:
+      "This is one of the best 'Rome suddenly empties out' stops: defensive walls, a Romanesque church, cloister, and the frescoed Chapel of San Silvestro if open.",
+    hours: "Church usually open daily; cloister/chapel hours vary. Check before going.",
+  },
+  {
+    slug: "santo-stefano-rotondo",
+    category: "culture",
+    title: "Santo Stefano Rotondo",
+    marker: "SR",
+    kind: "Circular basilica",
+    neighborhood: "Celio",
+    address: "Via di Santo Stefano Rotondo 7, 00184 Roma",
+    lat: 41.8859,
+    lng: 12.4964,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Santo_Stefano_Rotondo_Interior.jpg/1280px-Santo_Stefano_Rotondo_Interior.jpg",
+    imageAlt: "Circular nave of Santo Stefano Rotondo",
+    shortDescription: "A rare circular early Christian basilica on the Celio hill.",
+    details:
+      "Architecturally strange and almost always calm. The circular plan is beautiful; the martyrdom fresco cycle around the walls is much more intense than the serenity suggests.",
+    hours: "Generally open mornings and afternoons; check current church hours.",
+  },
+  {
+    slug: "san-carlo-alle-quattro-fontane",
+    category: "culture",
+    title: "San Carlo alle Quattro Fontane",
+    marker: "4F",
+    kind: "Borromini church",
+    neighborhood: "Quirinale",
+    address: "Via del Quirinale 23, 00187 Roma",
+    lat: 41.9017,
+    lng: 12.4902,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/San_Carlo_alle_Quattro_Fontane_-_Cupola.jpg/1280px-San_Carlo_alle_Quattro_Fontane_-_Cupola.jpg",
+    imageAlt: "Oval dome of San Carlo alle Quattro Fontane",
+    shortDescription: "Borromini compresses a whole Baroque universe into a tiny church.",
+    details:
+      "Tiny footprint, restless facade, and a luminous oval dome. It is an easy Quirinale pair with Sant'Andrea al Quirinale across the street.",
+    hours: "Small church with variable hours; check before going.",
+  },
+  {
+    slug: "sant-andrea-al-quirinale",
+    category: "culture",
+    title: "Sant'Andrea al Quirinale",
+    marker: "AQ",
+    kind: "Bernini church",
+    neighborhood: "Quirinale",
+    address: "Via del Quirinale 29, 00187 Roma",
+    lat: 41.9007,
+    lng: 12.4897,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sant%27Andrea_al_Quirinale_%28Rome%29_-_Interior.jpg/1280px-Sant%27Andrea_al_Quirinale_%28Rome%29_-_Interior.jpg",
+    imageAlt: "Interior of Sant'Andrea al Quirinale",
+    shortDescription: "Bernini's jewel-box Jesuit church on the Quirinale.",
+    details:
+      "The perfect counterpoint to Borromini's San Carlo: oval plan, theatrical light, and Bernini at his most concentrated. Visit both in one small loop.",
+    hours: "Generally open mornings and late afternoon; check current church hours.",
+  },
+  {
+    slug: "case-romane-del-celio",
+    category: "culture",
+    title: "Case Romane del Celio",
+    marker: "CR",
+    kind: "Underground Roman houses",
+    neighborhood: "Celio",
+    address: "Clivo di Scauro, 00184 Roma",
+    lat: 41.8863,
+    lng: 12.4961,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Case_romane_del_Celio_-_interno_1.jpg/1280px-Case_romane_del_Celio_-_interno_1.jpg",
+    imageAlt: "Frescoed underground Roman rooms at Case Romane del Celio",
+    shortDescription: "Layered Roman houses preserved below Santi Giovanni e Paolo.",
+    details:
+      "A genuine underground Rome stop: frescoed rooms, Roman domestic layers, and a calm Celio setting above the Colosseum. Excellent with Santi Quattro Coronati and Clivo di Scauro.",
+    hours: "Check official opening hours; ticketed entry.",
+    website: "https://www.coopculture.it/en/poi/case-romane-del-celio/",
+  },
+  {
+    slug: "vicus-caprarius",
+    category: "culture",
+    title: "Vicus Caprarius",
+    marker: "VC",
+    kind: "Underground archaeological site",
+    neighborhood: "Trevi",
+    address: "Vicolo del Puttarello 25, 00187 Roma",
+    lat: 41.9009,
+    lng: 12.4828,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Vicus_Caprarius_Roma.jpg/1280px-Vicus_Caprarius_Roma.jpg",
+    imageAlt: "Underground water and ruins at Vicus Caprarius near Trevi",
+    shortDescription: "The underground 'City of Water' behind the Trevi Fountain.",
+    details:
+      "A compact archaeological layer under the Trevi chaos: Roman apartment remains, aqueduct water, and a useful reminder that the fountain has an entire hidden water system behind it.",
+    hours: "Ticketed site; check current opening slots before going.",
+    website: "https://www.vicuscaprarius.com/",
+  },
+  {
+    slug: "palazzo-massimo-alle-terme",
+    category: "culture",
+    title: "Palazzo Massimo alle Terme",
+    marker: "PX",
+    kind: "Museum and palazzo",
+    neighborhood: "Termini",
+    address: "Largo di Villa Peretti 2, 00185 Roma",
+    lat: 41.9017,
+    lng: 12.4986,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Palazzo_Massimo_alle_Terme_%28Rome%29.jpg/1280px-Palazzo_Massimo_alle_Terme_%28Rome%29.jpg",
+    imageAlt: "Facade of Palazzo Massimo alle Terme",
+    shortDescription: "One of Rome's best museums for frescoes, mosaics, coins, and sculpture.",
+    details:
+      "Do not let the Termini location fool you. The painted garden room from Villa of Livia and the ancient bronze boxer make this one of the city's strongest museum stops.",
+    hours: "Tuesday-Sunday, generally 09:30-19:00; closed Monday.",
+    website: "https://museonazionaleromano.beniculturali.it/palazzo-massimo/",
+  },
+  {
+    slug: "villa-medici-gardens",
+    category: "balades",
+    title: "Villa Medici Gardens",
+    marker: "VM",
+    kind: "Garden and villa",
+    neighborhood: "Pincio",
+    address: "Viale della Trinità dei Monti 1, 00187 Roma",
+    lat: 41.9089,
+    lng: 12.4822,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Villa_Medici_Roma_Giardino.jpg/1280px-Villa_Medici_Roma_Giardino.jpg",
+    imageAlt: "Formal garden at Villa Medici",
+    shortDescription: "Formal gardens and a hilltop villa above the Spanish Steps.",
+    details:
+      "A quieter alternative to Villa Borghese: guided garden visits, views from the Pincio, and a Renaissance villa now run by the French Academy in Rome.",
+    hours: "Guided visits only for many areas; check current tour times.",
+    website: "https://www.villamedici.it/en/",
+  },
+  {
+    slug: "orto-botanico-di-roma",
+    category: "balades",
+    title: "Orto Botanico di Roma",
+    marker: "OB",
+    kind: "Botanical garden",
+    neighborhood: "Trastevere / Gianicolo",
+    address: "Largo Cristina di Svezia 23/a, 00165 Roma",
+    lat: 41.8915,
+    lng: 12.4652,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Orto_Botanico_di_Roma_14.jpg/1280px-Orto_Botanico_di_Roma_14.jpg",
+    imageAlt: "Palm-lined paths in the Orto Botanico di Roma",
+    shortDescription: "A large botanical garden climbing the Gianicolo behind Trastevere.",
+    details:
+      "A proper stroll, not a quick tick-box: bamboo grove, Japanese garden, palms, greenhouses, and enough slope to feel away from the city without leaving the center.",
+    hours: "Ticketed garden; hours vary by season.",
+    website: "https://web.uniroma1.it/ortobotanico/",
+  },
+  {
+    slug: "valle-della-caffarella",
+    category: "balades",
+    title: "Valle della Caffarella",
+    marker: "CA",
+    kind: "Park and archaeological landscape",
+    neighborhood: "Appia Antica",
+    address: "Largo Tacchi Venturi, 00179 Roma",
+    lat: 41.8619,
+    lng: 12.5352,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Parco_della_Caffarella_-_Roma.jpg/1280px-Parco_della_Caffarella_-_Roma.jpg",
+    imageAlt: "Open meadow and ruins in the Valle della Caffarella",
+    shortDescription: "A pastoral valley of sheep, ruins, springs, and long quiet paths.",
+    details:
+      "The best 'Rome but countryside' walk inside the city. Chain it with Appia Antica or keep it simple: a picnic, the Nymphaeum of Egeria, and slow walking.",
+    hours: "Public park; daylight is best.",
+    website: "https://www.parcoappiaantica.it/",
+  },
+  {
+    slug: "via-appia-antica",
+    category: "balades",
+    title: "Via Appia Antica",
+    marker: "AP",
+    kind: "Ancient road walk",
+    neighborhood: "Appia Antica",
+    address: "Via Appia Antica, 00179 Roma",
+    lat: 41.8588,
+    lng: 12.5183,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Via_Appia_Antica_Roma_2012.jpg/1280px-Via_Appia_Antica_Roma_2012.jpg",
+    imageAlt: "Basalt paving stones and ruins on Via Appia Antica",
+    shortDescription: "Ancient paving stones, aqueduct views, catacombs, and long open stretches.",
+    details:
+      "Go on Sunday if possible, when traffic restrictions make the walk feel like an archaeological countryside route. Rent bikes if you want to reach farther tombs.",
+    hours: "Road always accessible; sites along it have separate hours.",
+    website: "https://www.parcoappiaantica.it/",
+  },
+  {
+    slug: "clivo-di-scauro",
+    category: "balades",
+    title: "Clivo di Scauro",
+    marker: "CS",
+    kind: "Historic lane",
+    neighborhood: "Celio",
+    address: "Clivo di Scauro, 00184 Roma",
+    lat: 41.8866,
+    lng: 12.4958,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Clivo_di_Scauro_Roma.jpg/1280px-Clivo_di_Scauro_Roma.jpg",
+    imageAlt: "Brick arches along the Clivo di Scauro",
+    shortDescription: "A brick-arched lane on the Celio that feels like a film set.",
+    details:
+      "A tiny, atmospheric connector between Santi Giovanni e Paolo, Case Romane del Celio, and the Colosseum side. Do it slowly; it is short but deeply Roman.",
+    hours: "Always accessible.",
+  },
+  {
+    slug: "museo-boncompagni-ludovisi",
+    category: "culture",
+    title: "Museo Boncompagni Ludovisi",
+    marker: "BL",
+    kind: "Decorative arts museum",
+    neighborhood: "Ludovisi",
+    address: "Via Boncompagni 18, 00187 Roma",
+    lat: 41.9093,
+    lng: 12.4934,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Museo_Boncompagni_Ludovisi_Roma.jpg/1280px-Museo_Boncompagni_Ludovisi_Roma.jpg",
+    imageAlt: "Villa Boncompagni Ludovisi museum exterior",
+    shortDescription:
+      "A small villa-museum for fashion, decorative arts, and early 20th-century Rome.",
+    details:
+      "A very low-crowd museum near Via Veneto: Art Nouveau rooms, fashion history, decorative arts, and the mood of a private Roman villa.",
+    hours: "Check official museum hours before going.",
+    website:
+      "https://direzionemuseistataliroma.cultura.gov.it/istituti/museo-boncompagni-ludovisi/",
+  },
+  {
+    slug: "palazzo-farnese",
+    category: "culture",
+    title: "Palazzo Farnese",
+    marker: "PF",
+    kind: "Palazzo",
+    neighborhood: "Regola",
+    address: "Piazza Farnese 67, 00186 Roma",
+    lat: 41.8951,
+    lng: 12.4709,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Palazzo_Farnese_Rome.jpg/1280px-Palazzo_Farnese_Rome.jpg",
+    imageAlt: "Facade of Palazzo Farnese on Piazza Farnese",
+    shortDescription:
+      "Michelangelo-era palace, now the French Embassy, visitable only by reservation.",
+    details:
+      "Worth adding because the exterior is already a Campo de' Fiori detour, and the Carracci Gallery inside is one of Rome's great palace rooms if you can secure a guided visit.",
+    hours: "Guided visits only by reservation; exterior always visible.",
+    website: "https://visite-palazzofarnese.it/",
+  },
+  {
+    slug: "oratorio-del-gonfalone",
+    category: "culture",
+    title: "Oratorio del Gonfalone",
+    marker: "OF",
+    kind: "Frescoed oratory",
+    neighborhood: "Ponte / Via Giulia",
+    address: "Via del Gonfalone 32/a, 00186 Roma",
+    lat: 41.8983,
+    lng: 12.4675,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Oratorio_del_Gonfalone_%28Rome%29_-_Interior.jpg/1280px-Oratorio_del_Gonfalone_%28Rome%29_-_Interior.jpg",
+    imageAlt: "Frescoed interior of Oratorio del Gonfalone",
+    shortDescription: "A small fresco-covered oratory hidden just off Via Giulia.",
+    details:
+      "One of those rooms you can walk past for years without knowing it exists. Check concert/opening dates: the Passion cycle frescoes are the reason to get inside.",
+    hours: "Variable openings and concerts; check before going.",
+    website: "https://www.oratoriogonfalone.eu/",
+  },
+  {
+    slug: "san-giovanni-a-porta-latina",
+    category: "culture",
+    title: "San Giovanni a Porta Latina",
+    marker: "JL",
+    kind: "Medieval church",
+    neighborhood: "Appio Latino",
+    address: "Via di Porta Latina 17, 00179 Roma",
+    lat: 41.8799,
+    lng: 12.5014,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/San_Giovanni_a_Porta_Latina_Roma.jpg/1280px-San_Giovanni_a_Porta_Latina_Roma.jpg",
+    imageAlt: "Facade and bell tower of San Giovanni a Porta Latina",
+    shortDescription: "A quiet medieval church and courtyard near the Aurelian Walls.",
+    details:
+      "Best as part of an Appia/Porta Latina walk: medieval frescoes, a calm cloistered feel, and the tiny San Giovanni in Oleo nearby.",
+    hours: "Check current church hours before going.",
   },
 ];
 
